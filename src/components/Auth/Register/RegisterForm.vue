@@ -56,6 +56,7 @@
                   type="file"
                   id="files"
                   name="files"
+                  style="color: #0f171c"
                   @change="uploadFile"
                   accept="image/*"
                   ref="file"
@@ -69,6 +70,7 @@
               <input
                   type="file"
                   id="files2"
+                  style="color: #0f171c"
                   name="files"
                   @change="uploadFile2"
                   accept="image/*"
