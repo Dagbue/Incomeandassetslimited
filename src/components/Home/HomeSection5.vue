@@ -1,0 +1,210 @@
+<template>
+  <div class="alpha">
+    <div class="section-1-alpha">
+      <div class="section-1">
+        <p class="text-1">Join Income And Assets Limited and experience greatness</p>
+        <p class="text-2">
+          Discover the power of Income And Assets Limited, a cutting-edge app that integrates cryptocurrency, stocks, and forex
+          trading. Seamlessly manage and trade across these markets from a single platform, offering both convenience and control for your financial portfolio.</p>
+<!--        <p class="text-2">Download the Rubies app</p>-->
+                <div class="btn-part">
+                  <div class="btn-1">Create Account</div>
+                  <p class="btn-2">Log In</p>
+                </div>
+<!--        <div class="play-store">-->
+<!--          <img src="@/assets/applestore.svg" alt="" class="store-image" />-->
+<!--          <img src="@/assets/gogleplay.svg" alt="" class="store-image" />-->
+<!--        </div>-->
+      </div>
+
+      <div class="image-section">
+        <img src="@/assets/dualphone.png" alt="" class="image"/>
+      </div>
+    </div>
+
+
+
+  </div>
+</template>
+
+<script>
+export default {
+  name: "HomeSection5"
+}
+</script>
+
+<style scoped>
+
+.alpha{
+  background-image: url("@/assets/background.png");
+  /*background-color: #000;*/
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /*padding-bottom: 1%;*/
+  /*padding-top: 1%;*/
+}
+
+.section-1{
+  /*margin-top: 75px;*/
+  width: 50%;
+  margin-left: 10%;
+}
+
+.image-section{
+  width: 50%;
+  margin-right: 4%;
+}
+
+.image{
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-1-alpha{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.text-1{
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  margin-bottom: 10px;
+  font-family: 'BR-Firma-Bold', sans-serif;
+}
+
+.text-2{
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  color: #697582;
+  margin-bottom: 15px;
+}
+
+
+.play-store{
+  display: flex;
+  gap: 20px;
+}
+
+span{
+  padding: 3px 15px;
+  align-items: center;
+  gap: 4px;
+  background-color: #EFFAF6;
+  color: #2D9F75;
+  border-radius: 100px;
+  margin-left: 5px;
+}
+
+.btn-part{
+  display: flex;
+  gap: 15px;
+}
+
+.btn-1{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 48px;
+  padding: 8px 16px;
+  border-radius: 14px;
+  gap: 8px;
+  background-color: transparent;
+  border: 1px solid #d0d0d0;
+  color: #191C1F;
+  width: 180px;
+}
+
+.btn-2{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 48px;
+  padding: 8px 16px;
+  border-radius: 14px;
+  gap: 8px;
+  background-color: #070e20;
+  border: 1px solid #070e20;
+  width: 180px;
+  color: #ffffff;
+}
+@media (max-width: 990px) {
+}
+
+@media (max-width: 700px) {
+
+  .text-1{
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 8px;
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  .text-2{
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-1-alpha{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+
+  .section-1{
+    width: 100%;
+    margin-left: unset;
+  }
+
+  .image-section{
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .play-store{
+    justify-content: center;
+    gap: 10px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .text-1{
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 9px;
+  }
+
+  .text-2{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+</style>
