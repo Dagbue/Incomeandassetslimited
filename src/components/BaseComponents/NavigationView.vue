@@ -915,7 +915,7 @@ a {
     /*margin-top: 5px;*/
   }
   .logo {
-    width: 27%;
+    width: 30%;
     margin-left: unset;
     padding-left: unset;
     /*margin-left: 5px;*/

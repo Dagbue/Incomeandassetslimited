@@ -334,7 +334,7 @@ export default {
 
 
 .bx{
-  color: #ccaa16;
+  color: #FFFFFF;
 }
 @media (max-width: 990px) {
 
@@ -378,6 +378,7 @@ export default {
 
   .section-header-1{
     font-size: 20px;
+    margin-top: 5%;
   }
 }
 

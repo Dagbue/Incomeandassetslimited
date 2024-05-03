@@ -63,19 +63,19 @@
       <div class="thumbnail">
         <div class="item active" >
           <img src="@/assets/background1.jpg" alt="" class="">
-          <div class="content" style="font-family: 'BR-Firma-Bold', sans-serif;" @click="onPostClick">
+          <div class="content mobilee" style="font-family: 'BR-Firma-Bold', sans-serif;" @click="onPostClick">
             Get Started
           </div>
         </div>
         <div class="item">
           <img src="@/assets/background2.jpg" alt="" class="" />
-          <div class="content" style="font-family: 'BR-Firma-Bold', sans-serif;" @click="onPostClick">
+          <div class="content mobilee" style="font-family: 'BR-Firma-Bold', sans-serif;" @click="onPostClick">
             Get Started
           </div>
         </div>
         <div class="item">
           <img src="@/assets/background3.jpg" alt="" class="" />
-          <div class="content" style="font-family: 'BR-Firma-Bold', sans-serif;" @click="onPostClick">
+          <div class="content mobilee" style="font-family: 'BR-Firma-Bold', sans-serif;" @click="onPostClick">
             Get Started
           </div>
         </div>
@@ -386,6 +386,9 @@ export default {
   .button-part{
     gap: 5px;
     margin-top: 4%;
+  }
+  .mobilee{
+    opacity: 0;
   }
 }
 
