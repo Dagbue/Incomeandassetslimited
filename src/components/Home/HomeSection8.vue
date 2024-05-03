@@ -13,7 +13,7 @@
         <!--        <p class="text-2">4 Months</p>-->
         <p class="text-3">4 Months</p>
 
-        <div class="btn" >
+        <div class="btn" @click="onPostClick" >
           <p>Invest Now</p>
         </div>
 
@@ -49,7 +49,7 @@
         <!--        <p class="text-2">4 Months</p>-->
         <p class="text-3">8 Months</p>
 
-        <div class="btn" >
+        <div class="btn" @click="onPostClick" >
           <p>Invest Now</p>
         </div>
 
@@ -85,7 +85,7 @@
         <!--        <p class="text-2">4 Months</p>-->
         <p class="text-3">12 Months</p>
 
-        <div class="btn" >
+        <div class="btn" @click="onPostClick" >
           <p>Invest Now</p>
         </div>
 
@@ -121,7 +121,7 @@
         <!--        <p class="text-2">4 Months</p>-->
         <p class="text-3">24 Months</p>
 
-        <div class="btn" >
+        <div class="btn" @click="onPostClick" >
           <p>Invest Now</p>
         </div>
 

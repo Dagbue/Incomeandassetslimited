@@ -1,78 +1,58 @@
 <template>
-
   <div class="alpha">
-    <div class="timeline">
-      <p class="section-header-1">Get started</p>
-      <p class="section-header">Start trading with ease on our platform.</p>
-      <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
-        <div class="timeline__event__icon ">
-          <i class="fas fa-tarp"></i>
-          <div class="timeline__event__date">
-            Step 1
-          </div>
-        </div>
-        <div class="timeline__event__content ">
-          <div class="timeline__event__title">
-            Create Account
-          </div>
-          <div class="timeline__event__description">
-            <p>Create an account and deposit funds to get started.</p>
-          </div>
-        </div>
-      </div>
-      <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
-        <div class="timeline__event__icon">
-          <i class="fa-solid fa-square-check"></i>
-          <div class="timeline__event__date">
-            Step 2
-          </div>
-        </div>
-        <div class="timeline__event__content">
-          <div class="timeline__event__title">
-            Choose Currency
-          </div>
-          <div class="timeline__event__description">
-            <p>Choose the currency pairs you want to trade.</p>
-          </div>
-        </div>
-      </div>
-      <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
-        <div class="timeline__event__icon">
-          <i class="fa-solid fa-chart-simple"></i>
-          <div class="timeline__event__date">
-            Step 3
-          </div>
-        </div>
-        <div class="timeline__event__content">
-          <div class="timeline__event__title">
-            Analyze market
-          </div>
-          <div class="timeline__event__description">
-            <p>Analyze market trends and make informed trading decisions.</p>
-          </div>
+    <p class="section-header-1">How To Get Started.</p>
+<!--    <p class="section-header">You decide what to trade and when to trade it. We’re hard at work behind the scenes to-->
+<!--      minimize your costs and improve your execution.</p>-->
 
-        </div>
-      </div>
-      <div class="timeline__event animated fadeInUp timeline__event--type1">
-        <div class="timeline__event__icon">
-          <i class="fas fa-graduation-cap"></i>
-          <div class="timeline__event__date">
-            Step 4
-          </div>
-        </div>
-        <div class="timeline__event__content">
-          <div class="timeline__event__title">
-            Execute trades
-          </div>
-          <div class="timeline__event__description">
-            <p>Execute trades and monitor your portfolio performance.</p>
-          </div>
-        </div>
+
+    <div class="section-alpha">
+
+      <div class="section-2">
+
+        <img src="https://incomestrategyltd.com/myfiles/createp.png" alt="image" class="image" />
+
       </div>
 
+
+      <div class="section-1">
+
+        <div class="text-part">
+          <div class="lawrence">
+            <img src="@/assets/pointer.svg" alt="pointer">
+            <p class="text-1">Create Account</p>
+          </div>
+          <p class="text-2">Create your account today and unlock the full potential of our services.</p>
+        </div>
+
+        <div class="text-part">
+          <div class="lawrence">
+            <img src="@/assets/pointer.svg" alt="pointer">
+            <p class="text-1">Verify your Account</p>
+          </div>
+          <p class="text-2">Verify your account to unlock full access and kickstart your journey with us.</p>
+        </div>
+
+        <div class="text-part">
+          <div class="lawrence">
+            <img src="@/assets/pointer.svg" alt="pointer">
+            <p class="text-1">Choose an Investment Plan</p>
+          </div>
+          <p class="text-2">Select the perfect investment plan and embark on your journey to financial success.</p>
+        </div>
+
+        <div class="text-part">
+          <div class="lawrence">
+            <img src="@/assets/pointer.svg" alt="pointer">
+            <p class="text-1">Deposit into your Investment Account</p>
+          </div>
+          <p class="text-2">Deposit into your investment account and watch your Profits grow.</p>
+        </div>
+
+
+      </div>
     </div>
-  </div>
 
+  </div>
 </template>
 
 <script>
@@ -82,6 +62,14 @@ export default {
 </script>
 
 <style scoped>
+.lawrence{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
 .alpha{
   background-image: url("@/assets/background.png");
   /*background-color: #000;*/
@@ -90,8 +78,15 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding-bottom: 5%;
   padding-top: 5%;
+}
+
+.section-1{
+  width: 50%;
+}
+
+.section-2{
+  width: 50%;
 }
 
 .section-header{
@@ -99,8 +94,8 @@ export default {
   color: #0f171c;
   text-align: center;
   font-weight: 300;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 23%;
+  margin-right: 23%;
   padding-bottom: 1%;
 }
 .section-header-1{
@@ -111,129 +106,98 @@ export default {
   padding-bottom: 0.5%;
   font-family: 'BR-Firma-Bold', sans-serif;
 }
-
-.timeline {
+.section-alpha{
   display: flex;
-  flex-direction: column;
-  width: 55vw;
-  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin-top: 3%;
 }
 
-.timeline__event {
-  background: #fff;
-  margin-bottom: 20px;
-  position: relative;
-  display: flex;
-  margin: 20px 0;
-  border-radius: 8px;
-  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+.image{
+  width: 75%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 12px;
 }
-.timeline__event__title {
-  font-size: 1.2rem;
-  line-height: 1.4;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #070e20;
-  letter-spacing: 1.5px;
+
+.text-part{
+  width: 80%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 3%;
+}
+
+.text-1{
+  font-size: 28px;
+  line-height: 26px;
+  font-weight: 500;
+  white-space: pre-line;
+  color: #0f171c;
   font-family: 'BR-Firma-Bold', sans-serif;
 }
-.timeline__event__content {
-  padding: 20px;
-}
-.timeline__event__date {
-  color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: 600;
-  white-space: nowrap;
-}
-.timeline__event__icon {
-  border-radius: 8px 0 0 8px;
-  background: #070e20;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 40%;
-  font-size: 2rem;
-  color: #070e20;
-  padding: 20px;
-}
-.timeline__event__icon i {
-  position: absolute;
-  top: 50%;
-  left: -70px;
-  font-size: 2rem;
-  transform: translateY(-50%);
-}
-.timeline__event__description {
-  flex-basis: 60%;
-}
-.timeline__event:after {
-  content: "";
-  width: 2px;
-  height: 100%;
-  background: #9251ac;
-  position: absolute;
-  top: 52%;
-  left: -3.5rem;
-  z-index: -1;
-}
-.timeline__event:before {
-  content: "";
-  width: 5rem;
-  height: 5rem;
-  position: absolute;
-  background: #f6a4ec;
-  border-radius: 100%;
-  left: -6rem;
-  top: 50%;
-  transform: translateY(-50%);
-  border: 2px solid #9251ac;
-}
-.timeline__event--type2:before {
-  background: #87bbfe;
-  border-color: #555ac0;
-}
-.timeline__event--type2:after {
-  background: #555ac0;
-}
-.timeline__event--type2 .timeline__event__date {
-  color: #ffffff;
-}
-.timeline__event--type2 .timeline__event__icon {
-  background: #070e20;
-  color: #070e20;
-}
-.timeline__event--type2 .timeline__event__title {
-  color: #070e20;
-}
-.timeline__event--type3:before {
-  background: #aff1b6;
-  border-color: #24b47e;
-}
-.timeline__event--type3:after {
-  background: #24b47e;
-}
-.timeline__event--type3 .timeline__event__date {
-  color: #ffffff;
-}
-.timeline__event--type3 .timeline__event__icon {
-  background: #070e20;
-  color: #070e20;
-}
-.timeline__event--type3 .timeline__event__title {
-  color: #070e20;
-}
-.timeline__event:last-child:after {
-  content: none;
+
+.text-2{
+  margin: 0;
+  color: #222222;
+  font-size: 17px;
+  white-space: pre-line;
+  line-height: 1.4;
+  padding-left: 7%;
 }
 
-@media (max-width: 786px) {
-  .timeline__event {
-    flex-direction: column;
+@media (max-width: 700px) {
+  .alpha{
+    padding-top: 10%;
+    padding-bottom: unset;
+  }
+  .section-header{
+    font-size: 16px;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .section-header-1{
+    font-size: 28px;
+  }
+  .section-alpha{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .section-1{
+    width: 100%;
   }
 
-  .timeline__event__icon {
-    border-radius: 4px 4px 0 0;
+  .section-2{
+    width: 100%;
+    margin-bottom: 5%;
   }
+
+  .text-1{
+    font-size: 26px;
+    line-height: 24px;
+  }
+
+  .text-2{
+    font-size: 16px;
+    line-height: 1.3;
+    padding-left: 10%;
+  }
+  .image{
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .alpha{
+    padding-bottom: unset;
+  }
+
+  .image{
+    margin-bottom: -19px;
+  }
+
 }
 </style>

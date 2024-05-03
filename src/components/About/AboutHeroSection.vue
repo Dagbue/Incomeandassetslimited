@@ -1,61 +1,44 @@
 <template>
-  <div class="alpha">
+    <div class="alpha">
 
-<!--    <main>-->
+      <div class="section-alpha">
 
-<!--      <div class="main-intro">-->
-<!--        <h1> Why choose <br> Income Trade <br> Asset </h1>-->
-<!--&lt;!&ndash;        <p> Maximize your trading success with our superior, <br> market conditions, offering you the optimal <br> advantage for financial excellence.</p>&ndash;&gt;-->
-<!--&lt;!&ndash;        <p class="btn">Register</p>&ndash;&gt;-->
-<!--      </div>-->
+        <div class="section-1">
 
-<!--      <div class="main-quotes">-->
-<!--        <p>"We aim to deliver the ultimate online trading experience <br> by passionately innovating and continually enhancing <br> the way you invest in financial markets."</p>-->
+          <div class="content-1 right">
+            <p class="text-1">Withdrawals</p>
+            <p class="text-2">Instant withdrawals</p>
+            <p class="text-3">Get your deposits and withdrawals approved the moment you click the button.</p>
+          </div>
 
-<!--        <p>"We aim is to deliver an unparalleled trading experience <br> by passionately innovating and enhancing how <br> you invest in financial markets online."</p>-->
-<!--      </div>-->
+          <div class="content-1 right">
+            <p class="text-1">Spreads</p>
+            <p class="text-2">Tight & stable spreads</p>
+            <p class="text-3">Trade confidently in times of volatility with low and reliable spreads.</p>
+          </div>
 
-<!--    </main>-->
-
-
-    <div class="section-alpha">
-
-      <div class="section-1">
-
-        <div class="content-1 right">
-          <p class="text-1">Withdrawals</p>
-          <p class="text-2">Instant withdrawals</p>
-          <p class="text-3">Get your deposits and withdrawals approved the moment you click the button.</p>
         </div>
 
-        <div class="content-1 right">
-          <p class="text-1">Spreads</p>
-          <p class="text-2">Tight & stable spreads</p>
-          <p class="text-3">Trade confidently in times of volatility with low and reliable spreads.</p>
-        </div>
+        <div class="section-1">
 
-      </div>
+          <div class="content-1 left">
+            <p class="text-1">Execution speed</p>
+            <p class="text-2">Ultra-fast execution</p>
+            <p class="text-3">Execute your orders in milliseconds, no matter how big they are.</p>
+          </div>
 
-      <div class="section-1">
+          <div class="content-1 left">
+            <p class="text-1">Swaps</p>
+            <p class="text-2">No overnight fees</p>
+            <p class="text-3">Hold your leveraged positions for as long as you like, swap-free. T&C apply.</p>
+          </div>
 
-        <div class="content-1 left">
-          <p class="text-1">Execution speed</p>
-          <p class="text-2">Ultra-fast execution</p>
-          <p class="text-3">Execute your orders in milliseconds, no matter how big they are.</p>
-        </div>
-
-        <div class="content-1 left">
-          <p class="text-1">Swaps</p>
-          <p class="text-2">No overnight fees</p>
-          <p class="text-3">Hold your leveraged positions for as long as you like, swap-free. T&C apply.</p>
         </div>
 
       </div>
+
 
     </div>
-
-
-  </div>
 </template>
 
 <script>
@@ -73,11 +56,6 @@ export default {
   background-size: 50vh, cover;
   background-repeat: no-repeat;
   background-position: bottom, center;
-  /*display: flex;*/
-  /*justify-content: center;*/
-  /*align-items: center;*/
-  /*align-content: center;*/
-  /*column-gap: 20px;*/
   z-index: 100;
   color: #FFFFFF;
 }
@@ -123,18 +101,6 @@ export default {
 
 
 
-/*h1{*/
-/*  font-size: 24px;*/
-/*  line-height: 32px;*/
-/*  color: #ffffff;*/
-/*  font-weight: 600;*/
-/*  !*text-transform: uppercase;*!*/
-/*}*/
-/*p{*/
-/*  font-size: 14px;*/
-/*  line-height: 18px;*/
-/*  color: #ffffff;*/
-/*}*/
 main{
   width: 100%;
   height: 90vh;
@@ -163,16 +129,7 @@ main  p {
   line-height: 30px;
 }
 
-.btn{
-  margin-top: 15px;
-  font-size: 18px;
-  display: block;
-  background-color: #ccaa16;
-  color: #FFFFFF;
-  padding: 5px 30px;
-  width: fit-content;
-  border-radius: 4px;
-}
+
 
 main .main-quotes p {
   /*border-left: 4px solid #ffcf01;*/
@@ -261,6 +218,33 @@ main p{
 }
 
 @media screen and (max-width: 500px) {
+
+
+  .left{
+    position: relative;
+    left: unset;
+  }
+
+  .right{
+    position: relative;
+    right: unset;
+    left: 4vh;
+  }
+
+  .text-2{
+    color: #0f171c;
+    font-family: 'BR-Firma-Bold', sans-serif;
+  }
+
+  .text-3{
+    color: #0f171c;
+    font-family: 'BR-Firma-Bold', sans-serif;
+  }
+
+
+  .section-1{
+    padding-top: 25%;
+  }
 
 }
 </style>

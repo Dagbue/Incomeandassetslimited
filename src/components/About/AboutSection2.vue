@@ -252,5 +252,16 @@ export default {
 
 
 @media (max-width: 500px) {
+  .section-2-alpha{
+    margin-top: 7%;
+    margin-bottom: 8%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .section-header{
+    margin-left: 4%;
+    margin-right: 4%;
+  }
 }
 </style>

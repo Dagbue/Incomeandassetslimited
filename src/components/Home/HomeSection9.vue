@@ -37,8 +37,8 @@
       <p class="text-2" style="text-align: center;font-family: 'BR-Firma-Bold', sans-serif;">Get Started</p>
 
       <div class="btn-part">
-        <div class="btn-1">Create Account</div>
-        <p class="btn-2">Log In</p>
+        <div class="btn-1" @click="onPostClick">Create Account</div>
+        <p class="btn-2" @click="onPostClick2">Log In</p>
       </div>
     </div>
 
@@ -49,7 +49,15 @@
 
 <script>
 export default {
-  name: "HomeSection9"
+  name: "HomeSection9",
+  methods: {
+    onPostClick() {
+      this.$router.push("/register");
+    },
+    onPostClick2() {
+      this.$router.push("/login");
+    },
+  },
 }
 </script>
 
@@ -149,14 +157,30 @@ export default {
   }
 
 
-  .image2{
-    width: 25%;
+  .alpha{
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
-
 
 }
 
 @media (max-width: 500px){
+
+  .section-1-inner{
+    display: block;
+  }
+
+  .image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    width: 150px;
+  }
+
+  .btn-part{
+    margin-top: 5%;
+  }
 
 }
 </style>

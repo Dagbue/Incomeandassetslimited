@@ -8,8 +8,8 @@
           trading. Seamlessly manage and trade across these markets from a single platform, offering both convenience and control for your financial portfolio.</p>
 <!--        <p class="text-2">Download the Rubies app</p>-->
                 <div class="btn-part">
-                  <div class="btn-1">Create Account</div>
-                  <p class="btn-2">Log In</p>
+                  <div class="btn-1" @click="onPostClick">Create Account</div>
+                  <p class="btn-2" @click="onPostClick2">Log In</p>
                 </div>
 <!--        <div class="play-store">-->
 <!--          <img src="@/assets/applestore.svg" alt="" class="store-image" />-->
@@ -29,7 +29,15 @@
 
 <script>
 export default {
-  name: "HomeSection5"
+  name: "HomeSection5",
+  methods: {
+    onPostClick() {
+      this.$router.push("/register");
+    },
+    onPostClick2() {
+      this.$router.push("/login");
+    },
+  },
 }
 </script>
 
@@ -205,6 +213,12 @@ span{
     width: 85%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .btn-part{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
   }
 }
 </style>

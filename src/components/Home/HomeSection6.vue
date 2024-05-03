@@ -14,7 +14,7 @@
           stocks and forex trading. Join Income And Assets Limited and take advantage of our robust security measures designed to
           shield you from potential fraud, ensuring your trading activities are safe and secure. Benefit from our
           vigilant protection and invest with confidence in the dynamic world of cryptocurrency and forex markets.</p>
-        <div class="btn-1">
+        <div class="btn-1" @click="onPostClick">
           Get Started
         </div>
       </div>
@@ -26,7 +26,15 @@
 
 <script>
 export default {
-  name: "HomeSection6"
+  name: "HomeSection6",
+  methods: {
+    onPostClick() {
+      this.$router.push("/register");
+    },
+    onPostClick2() {
+      this.$router.push("/login");
+    },
+  },
 }
 </script>
 
@@ -137,6 +145,10 @@ export default {
 
   .image{
     width: 100%;
+  }
+
+  .alpha{
+    background-size: cover;
   }
 }
 

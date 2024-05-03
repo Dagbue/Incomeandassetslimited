@@ -174,7 +174,7 @@ export default {
 .logo-container {
   display: flex;
   justify-content: space-between;
-  margin-left: 7%;
+  margin-left: 5%;
   /*margin-right: 7%;*/
   padding-top: 1%;
 }
@@ -428,7 +428,12 @@ a{
     justify-content: center;
     flex-direction: column;
     margin-left: unset;
+    padding-bottom: 5px;
+  }
 
+
+  .logo-container {
+    margin-left: unset;
   }
 }
 </style>

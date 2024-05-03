@@ -9,7 +9,7 @@
         <p class="download-sub">53 Bristol Road Bristol Road, Chippenham, England, SN15 1NT</p>
       </div>
 
-      <div class="button-seprate">
+      <div class="button-seprate" @click="onPostClick">
         <button class="button">
           Contact Us
           <img src="@/assets/arrow-right-line.svg" alt="btn-image" class="btn-image" />
@@ -27,7 +27,13 @@
 
 <script>
 export default {
-  name: "ReadyToWork"
+  name: "ReadyToWork",
+  methods: {
+    onPostClick() {
+      this.$router.push("/contact");
+      window.scrollTo(0, 0);
+    },
+  },
 }
 </script>
 
@@ -118,4 +124,19 @@ i{
 /*  gap: 15px;*/
 /*  margin-top: 10px;*/
 /*}*/
+
+@media (max-width: 700px){
+  .alpha-2{
+    width: 460px;
+    margin-top: 5%;
+  }
+
+  .last-text{
+    padding-top: 7.5%;
+  }
+}
+
+@media (max-width: 500px){
+
+}
 </style>

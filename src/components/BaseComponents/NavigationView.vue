@@ -22,7 +22,6 @@
 
           <img alt="company logo" src="@/assets/logo.png" class="logo" @click="home" />
 
-
           <ul v-show="!mobile" class="menu-4" >
 
             <li class="link">
@@ -63,39 +62,17 @@
       <div class="mobile" v-show="mobile">
         <div>
           <ul class="dropdown-nav" v-show="mobileNav">
-            <img alt="company logo" src="@/assets/logo.png" class="logo2" />
+            <img alt="company logo" src="@/assets/logo.png" class="logo2" @click="home" />
 
             <label class="accordion-wrapper">
               <input type="checkbox" class="accordion" hidden />
               <div class="title">
                 <div class="title-content">
-                  <p class="title-content-para">Personal</p>
+                  <router-link  to="/about">
+                    <p class="title-content-para" @click="toggleMobileNav2">Company</p>
+                  </router-link>
                 </div>
-<!--                <svg viewBox="0 0 256 512" width="8" title="angle-right" class="side-icon" fill="#01675b">-->
-<!--                  <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />-->
-<!--                </svg>-->
-<!--                <svg viewBox="0 0 320 512" height="20" title="angle-down" class="down-icon" fill="#01675b">-->
-<!--                  <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />-->
-<!--                </svg>-->
               </div>
-
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--               <router-link to="/checking"><p @click="toggleMobileNav2" class="title-content-para">Checking</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
-
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/saving"><p @click="toggleMobileNav2" class="title-content-para">Saving</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
-
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/iraview"><p @click="toggleMobileNav2" class="title-content-para">IRA Account</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
 
 
             </label>
@@ -104,33 +81,11 @@
               <input type="checkbox" class="accordion" hidden />
               <div class="title">
                 <div class="title-content">
-                  <p class="title-content-para">Business</p>
+                  <router-link  to="/testimonials">
+                  <p class="title-content-para" @click="toggleMobileNav2">Testimonials</p>
+                  </router-link>
                 </div>
-<!--                <svg viewBox="0 0 256 512" width="8" title="angle-right" class="side-icon" fill="#01675b">-->
-<!--                  <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />-->
-<!--                </svg>-->
-<!--                <svg viewBox="0 0 320 512" height="20" title="angle-down" class="down-icon" fill="#01675b">-->
-<!--                  <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />-->
-<!--                </svg>-->
               </div>
-
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/personalLoans"><p @click="toggleMobileNav2" class="title-content-para">Personal Loans</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
-
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/mortgagesView"><p @click="toggleMobileNav2" class="title-content-para">Mortgages</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
-
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/studentLoan"><p @click="toggleMobileNav2" class="title-content-para">Student Loan</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
 
 
             </label>
@@ -139,27 +94,11 @@
               <input type="checkbox" class="accordion" hidden />
               <div class="title">
                 <div class="title-content">
-                  <p class="title-content-para">SMEs</p>
+                  <router-link  to="/pricing">
+                  <p class="title-content-para" @click="toggleMobileNav2">Pricing</p>
+                  </router-link>
                 </div>
-<!--                <svg viewBox="0 0 256 512" width="8" title="angle-right" class="side-icon" fill="#01675b">-->
-<!--                  <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />-->
-<!--                </svg>-->
-<!--                <svg viewBox="0 0 320 512" height="20" title="angle-down" class="down-icon" fill="#01675b">-->
-<!--                  <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />-->
-<!--                </svg>-->
               </div>
-
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/wealthManagementView"><p @click="toggleMobileNav2" class="title-content-para">Wealth Management</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
-
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/individualRetirementView"><p @click="toggleMobileNav2" class="title-content-para">Individual Retirement</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
 
             </label>
 
@@ -167,40 +106,29 @@
               <input type="checkbox" class="accordion" hidden />
               <div class="title">
                 <div class="title-content">
-                  <p class="title-content-para">Company</p>
+                  <router-link  to="/contact">
+                  <p class="title-content-para" @click="toggleMobileNav2">Contact Us</p>
+                  </router-link>
                 </div>
-<!--                <svg viewBox="0 0 256 512" width="8" title="angle-right" class="side-icon" fill="#01675b">-->
-<!--                  <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />-->
-<!--                </svg>-->
-<!--                <svg viewBox="0 0 320 512" height="20" title="angle-down" class="down-icon" fill="#01675b">-->
-<!--                  <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />-->
-<!--                </svg>-->
               </div>
-
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/guidesView"><p @click="toggleMobileNav2" class="title-content-para">Guides</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
-
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/resourcesView"><p @click="toggleMobileNav2" class="title-content-para">Resources</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
-
-<!--              <div class="content" >-->
-<!--                <div class="title-content content-2">-->
-<!--                  <router-link to="/faqView"><p @click="toggleMobileNav2" class="title-content-para">FAQ's</p></router-link>-->
-<!--                </div>-->
-<!--              </div>-->
 
             </label>
 
+            <label class="accordion-wrapper">
+              <input type="checkbox" class="accordion" hidden />
+              <div class="title">
+                <div class="title-content">
+                  <router-link  to="/faq">
+                    <p class="title-content-para" @click="toggleMobileNav2">F.A.Q</p>
+                  </router-link>
+                </div>
+              </div>
 
-              <p class="mobile-auth">Log In</p>
+            </label>
+
+            <button class="mobile-auth" @click="login">Log In</button>
             <br/>
-              <p class="mobile-auth">Sign Up</p>
+            <button class="mobile-auth" @click="register">Sign Up</button>
 
 
 <!--            <li class="link"><router-link  to="/loginWithEmail" class="auth-2">Login</router-link></li>-->
@@ -238,10 +166,12 @@ export default {
     home(){
       this.$router.push("/");
       window.scrollTo(0, 0);
+      this.toggleMobileNav2()
     },
     login(){
       this.$router.push("/login");
       window.scrollTo(0, 0);
+      this.toggleMobileNav2()
     },
     register(){
       this.$router.push("/register");
@@ -408,7 +338,7 @@ export default {
   text-decoration: none;
   -webkit-transition: all 0.1s ease;
   transition: all 0.25s ease;
-  margin: 0 2.5px;
+  /*margin: 0 2.5px;*/
   width: 120px;
   text-align: center;
   font-size: 14px;
@@ -579,8 +509,8 @@ i{
 }
 
 .logo2{
-  width: 80%;
-  margin-top: 10px;
+  width: 60%;
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 
@@ -982,13 +912,13 @@ a {
   .style-4 {
     display: flex;
     justify-content: space-between;
-    margin-top: 5px;
+    /*margin-top: 5px;*/
   }
   .logo {
-    width: 100%;
+    width: 27%;
     margin-left: unset;
     padding-left: unset;
-    margin-left: 5px;
+    /*margin-left: 5px;*/
   }
   .separate{
     display: flex;
@@ -1007,10 +937,6 @@ a {
 @media (max-width: 600px) {
   .bx-menu{
     font-size: 35px;
-  }
-  .logo {
-    min-width: 28%;
-    padding-left: unset;
   }
 
 

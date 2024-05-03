@@ -253,10 +253,31 @@ hr.new1 {
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     grid-gap: 30px;
   }
+
+  .section{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .section-inner{
+    margin-left: 15%;
+    margin-bottom: 3%;
+  }
+
+  .image{
+    width: 10%;
+  }
 }
 
 
 @media (max-width: 500px) {
+  .image{
+    width: 13%;
+  }
+
 
 }
 </style>

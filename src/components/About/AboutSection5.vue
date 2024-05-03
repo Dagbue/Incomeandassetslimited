@@ -153,6 +153,15 @@ export default {
 
 
 @media (max-width: 500px) {
+  .text-part{
+    width: 85%;
+  }
 
+  .section-header-1{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 </style>

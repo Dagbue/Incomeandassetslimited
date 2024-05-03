@@ -133,6 +133,7 @@ export default {
   .header-select{
     gap: 5px;
     margin-top: 3%;
+    margin-bottom: 5%;
   }
 
 }

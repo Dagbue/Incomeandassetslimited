@@ -7,6 +7,7 @@
     <home-section4/>
     <home-section5/>
     <home-section6/>
+    <features-part/>
     <get-started/>
     <home-section7/>
     <home-section8/>
@@ -34,10 +35,12 @@ import ReadyToWork from "@/components/Home/ReadyToWork.vue";
 import FooterHome from "@/components/BaseComponents/FooterHome.vue";
 import GetStarted from "@/components/Home/GetStarted.vue";
 import SliderSection from "@/components/Home/SliderSection.vue";
+import FeaturesPart from "@/components/Home/FeaturesPart.vue";
 
 export default {
   name: 'HomeView',
   components: {
+    FeaturesPart,
     SliderSection,
     GetStarted,
     FooterHome,
