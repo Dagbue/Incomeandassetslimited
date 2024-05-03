@@ -915,10 +915,9 @@ a {
     /*margin-top: 5px;*/
   }
   .logo {
-    width: 30%;
-    margin-left: unset;
+    width: 33%;
     padding-left: unset;
-    /*margin-left: 5px;*/
+    margin-left: 5px;
   }
   .separate{
     display: flex;

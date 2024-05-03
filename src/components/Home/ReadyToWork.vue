@@ -2,7 +2,7 @@
   <div class="alpha-2">
     <div class="section-1">
       <p class="last-text">Ready to work with us</p>
-      <div class="seperate">
+      <div class="seperate mobile">
         <p class="download-sub">support@incomeandassetslimited.com</p>
       </div>
       <div class="seperate mobile">
@@ -127,16 +127,25 @@ i{
 
 @media (max-width: 700px){
   .alpha-2{
-    width: 460px;
+    width: 400px;
     margin-top: 5%;
   }
 
   .last-text{
-    padding-top: 7.5%;
+    padding-top: 8%;
   }
 }
 
 @media (max-width: 500px){
+
+  .download-sub{
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .last-text{
+    font-size: 27px;
+  }
 
 }
 </style>
