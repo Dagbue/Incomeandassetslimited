@@ -242,8 +242,18 @@ export default {
 </script>
 
 <style scoped>
+.alpha{
+  background-image: url("@/assets/background.png");
+  /*background-color: #000;*/
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
 .section-1{
-  padding-top: 4%;
   display: flex;
   justify-content: space-evenly;
   /*align-content: center;*/

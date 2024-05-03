@@ -18,7 +18,7 @@
       </div>
 
       <div class="image-section">
-        <img src="@/assets/dualphone.png" alt="" class="image"/>
+        <img src="@/assets/aaaaa.png" alt="" class="image"/>
       </div>
     </div>
 
@@ -59,7 +59,7 @@ export default {
 }
 
 .image{
-  width: 70%;
+  width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -70,8 +70,8 @@ export default {
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .text-1{

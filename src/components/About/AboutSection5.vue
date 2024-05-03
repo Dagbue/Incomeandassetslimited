@@ -46,9 +46,9 @@ export default {
 
 <style scoped>
 .alpha{
-  /*background-color: #f0f2f4;*/
-  padding-bottom: 3%;
-  padding-top: 3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: #f4f5f6;
 }
 
 .section-1{

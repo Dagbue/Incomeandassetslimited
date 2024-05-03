@@ -17,10 +17,10 @@
               value of both Individual and Joint Accounts. To take advantage of this opportunity, simply follow the
               outlined steps to set up your account.
             </p>
-            <div class="button-part">
-              <button class="btn1" @click="onPostClick">Open Live Account</button>
-              <button class="btn1" @click="onPostClick2">Login Account</button>
-            </div>
+<!--            <div class="button-part">-->
+<!--              <button class="btn1" @click="onPostClick">Open Live Account</button>-->
+<!--              <button class="btn1" @click="onPostClick2">Login Account</button>-->
+<!--            </div>-->
           </div>
         </div>
         <div class="item">
@@ -32,10 +32,10 @@
               Experience the simplicity of setting up an account on our trading platform, where you can seamlessly
               adopt the strategies of experienced traders. No previous trading knowledge required.
             </p>
-            <div class="button-part">
-              <button class="btn1" @click="onPostClick">Open Live Account</button>
-              <button class="btn1" @click="onPostClick2">Login Account</button>
-            </div>
+<!--            <div class="button-part">-->
+<!--              <button class="btn1" @click="onPostClick">Open Live Account</button>-->
+<!--              <button class="btn1" @click="onPostClick2">Login Account</button>-->
+<!--            </div>-->
           </div>
         </div>
         <div class="item">
@@ -47,10 +47,10 @@
               Join our social trading platform and connect with a vibrant community of investors from around the world.
               Here, you can share and discover investment insights and strategies, enhancing your trading experience.
             </p>
-            <div class="button-part">
-              <button class="btn1" @click="onPostClick">Open Live Account</button>
-              <button class="btn1" @click="onPostClick2">Login Account</button>
-            </div>
+<!--            <div class="button-part">-->
+<!--              <button class="btn1" @click="onPostClick">Open Live Account</button>-->
+<!--              <button class="btn1" @click="onPostClick2">Login Account</button>-->
+<!--            </div>-->
           </div>
         </div>
       </div>
@@ -63,13 +63,13 @@
       <div class="thumbnail">
         <div class="item active" >
           <img src="@/assets/background1.jpg" alt="" class="">
-          <div class="content" style="color: #0f171c; font-family: 'BR-Firma-Bold', sans-serif;" @click="onPostClick">
+          <div class="content" style="font-family: 'BR-Firma-Bold', sans-serif;" @click="onPostClick">
             Get Started
           </div>
         </div>
         <div class="item">
           <img src="@/assets/background2.jpg" alt="" class="" />
-          <div class="content" style="color: #0f171c; font-family: 'BR-Firma-Bold', sans-serif;" @click="onPostClick">
+          <div class="content" style="font-family: 'BR-Firma-Bold', sans-serif;" @click="onPostClick">
             Get Started
           </div>
         </div>

@@ -172,8 +172,15 @@ export default {
 <style scoped>
 
 .alpha{
+  background-image: url("@/assets/background.png");
+  /*background-color: #000;*/
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 5%;
   padding-top: 5%;
-  /*padding-bottom: 3%;*/
 }
 .section-header{
   font-size: 17px;

@@ -22,7 +22,7 @@
       </div>
       <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
         <div class="timeline__event__icon">
-          <i class="fas fa-project-diagram"></i>
+          <i class="fa-solid fa-square-check"></i>
           <div class="timeline__event__date">
             Step 2
           </div>
@@ -38,7 +38,7 @@
       </div>
       <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
         <div class="timeline__event__icon">
-          <i class="fas fa-project-diagram"></i>
+          <i class="fa-solid fa-chart-simple"></i>
           <div class="timeline__event__date">
             Step 3
           </div>
@@ -115,7 +115,7 @@ export default {
 .timeline {
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  width: 55vw;
   margin: auto;
 }
 
@@ -133,7 +133,7 @@ export default {
   line-height: 1.4;
   text-transform: uppercase;
   font-weight: 600;
-  color: #9251ac;
+  color: #070e20;
   letter-spacing: 1.5px;
   font-family: 'BR-Firma-Bold', sans-serif;
 }
@@ -148,13 +148,13 @@ export default {
 }
 .timeline__event__icon {
   border-radius: 8px 0 0 8px;
-  background: #9251ac;
+  background: #070e20;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-basis: 40%;
   font-size: 2rem;
-  color: #9251ac;
+  color: #070e20;
   padding: 20px;
 }
 .timeline__event__icon i {
@@ -200,11 +200,11 @@ export default {
   color: #ffffff;
 }
 .timeline__event--type2 .timeline__event__icon {
-  background: #555ac0;
-  color: #555ac0;
+  background: #070e20;
+  color: #070e20;
 }
 .timeline__event--type2 .timeline__event__title {
-  color: #555ac0;
+  color: #070e20;
 }
 .timeline__event--type3:before {
   background: #aff1b6;
@@ -217,11 +217,11 @@ export default {
   color: #ffffff;
 }
 .timeline__event--type3 .timeline__event__icon {
-  background: #24b47e;
-  color: #24b47e;
+  background: #070e20;
+  color: #070e20;
 }
 .timeline__event--type3 .timeline__event__title {
-  color: #24b47e;
+  color: #070e20;
 }
 .timeline__event:last-child:after {
   content: none;

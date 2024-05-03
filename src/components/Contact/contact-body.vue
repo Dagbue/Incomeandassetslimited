@@ -124,8 +124,15 @@ export default {
 <style scoped>
 
 .alpha{
-  padding-top: 5%;
+  background-image: url("@/assets/background.png");
+  /*background-color: #000;*/
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   padding-bottom: 5%;
+  padding-top: 5%;
 }
 .section-alpha{
   display: flex;
@@ -270,8 +277,7 @@ export default {
 .newsletter {
   background: linear-gradient(179.02deg, #DEE1E6 -15.49%, #F7F7F7 107.09%);
   padding-top: 10px;
-  padding-bottom: 60px;
-  margin-top: 2%;
+  padding-bottom: 55px;
 }
 
 .parent-wrapper {

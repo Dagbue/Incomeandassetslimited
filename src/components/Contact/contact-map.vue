@@ -25,7 +25,7 @@ export default {
 <style scoped>
 
 
-.mapouter{position:relative;text-align:right;width:100%;height:573px;margin-top: 3%}
+.mapouter{position:relative;text-align:right;width:100%;height:573px;}
 .gmap_canvas {overflow:hidden;background:none!important;width:100%;height:573px;}
 .gmap_iframe {height:573px!important;}
 </style>

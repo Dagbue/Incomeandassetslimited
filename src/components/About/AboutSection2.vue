@@ -1,6 +1,42 @@
 <template>
   <div class="section-alpha">
 
+    <p class="section-header-1">Trade with confidence</p>
+    <p class="section-header">The numbers speak for themselves. Trade with the support of the world’s largest
+      retail broker.</p>
+
+    <div class="section-2">
+      <div class="section-2-alpha">
+
+        <div class="section-2-content">
+          <p class="text-1">$4+ Million</p>
+          <p class="text-2">monthly trading volume</p>
+        </div>
+
+        <div class="vl"></div>
+
+        <div class="section-2-content">
+          <p class="text-1">1.9 Million</p>
+          <p class="text-2">trades executed in 2023</p>
+        </div>
+
+        <div class="vl"></div>
+
+        <div class="section-2-content">
+          <p class="text-1">4,000+</p>
+          <p class="text-2">registered partners</p>
+        </div>
+
+        <div class="vl"></div>
+
+        <div class="section-2-content">
+          <p class="text-1">4.6</p>
+          <p class="text-2">Trustpilot rating</p>
+        </div>
+
+      </div>
+    </div>
+
     <p class="section-header-1">Take your trading to the next level</p>
     <p class="section-header">Our leading market conditions, trading features and proprietary protections give
       your strategy the advantage it deserves.</p>
@@ -59,9 +95,15 @@ export default {
 <style scoped>
 
 .section-alpha{
-  /*background-color: #f0f2f4;*/
-  padding-bottom: 3%;
-  padding-top: 3%;
+  background-image: url("@/assets/background.png");
+  /*background-color: #000;*/
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 
 .section-header{
@@ -143,6 +185,39 @@ export default {
   text-align: center;
   font-size: 15px;
   line-height: 1.5;
+}
+
+
+.section-2-alpha{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-bottom: 6%;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.section-2-content{
+  /*margin-right: 40px;*/
+  text-align: center;
+}
+
+.text-1{
+  font-family: 'BR-Firma-Bold', sans-serif;
+  font-size: 20px;
+  padding-bottom: 3px;
+}
+
+.text-2 {
+  color: #818a91;
+  font-size: 17px;
+}
+
+.vl {
+  border-left: 1.5px solid rgba(0, 0, 0, 0.12);
+  height: 100px;
 }
 
 @media (max-width: 700px) {
