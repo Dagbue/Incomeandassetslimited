@@ -175,12 +175,18 @@ export default {
     margin-left: auto;
     margin-right: auto;
     object-fit: cover;
-    width: 150px;
+    width: 180px;
   }
 
   .btn-part{
     margin-top: 5%;
   }
 
+  .text-2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
 }
 </style>

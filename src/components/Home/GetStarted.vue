@@ -167,6 +167,7 @@ export default {
   }
   .section-1{
     width: 100%;
+    margin-bottom: 10px;
   }
 
   .section-2{
@@ -175,7 +176,7 @@ export default {
   }
 
   .text-1{
-    font-size: 26px;
+    font-size: 22px;
     line-height: 24px;
   }
 
@@ -197,6 +198,10 @@ export default {
 
   .image{
     margin-bottom: -19px;
+  }
+
+  .lawrence{
+    margin-bottom: 5px;
   }
 
 }

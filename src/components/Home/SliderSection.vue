@@ -12,10 +12,9 @@
             <p>Exclusive Opportunity for Income And Assets Limited Day Traders.</p>
             <h2 @click="onPostClick">Get Started</h2>
             <p>
-              Opening and funding a new IAL account not only streamlines your financial management but also offers a
-              0.25% discount on the margin rate for the first $100,000 of your margin loan. This benefit enhances the
-              value of both Individual and Joint Accounts. To take advantage of this opportunity, simply follow the
-              outlined steps to set up your account.
+              Opening and funding a new IAL account offers a 0.25% discount on margin rates for the first $100,000 of
+              a margin loan, enhancing value for Individual and Joint Accounts. Simply follow outlined steps to set
+              up your account and take advantage of this opportunity.
             </p>
 <!--            <div class="button-part">-->
 <!--              <button class="btn1" @click="onPostClick">Open Live Account</button>-->

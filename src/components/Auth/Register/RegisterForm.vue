@@ -805,8 +805,8 @@ button{
   margin-top: 10%;
 }
 .space{
-  padding-top: 10.8px;
-  padding-bottom: 10.8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-right: 10px;
   border: 1px solid #d0d5dd;
   border-left-style: none;

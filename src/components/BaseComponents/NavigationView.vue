@@ -915,7 +915,7 @@ a {
     /*margin-top: 5px;*/
   }
   .logo {
-    width: 33%;
+    width: 20%;
     padding-left: unset;
     margin-left: 5px;
   }
@@ -966,6 +966,11 @@ a {
 
   .bx-bell{
     font-size: 25px;
+  }
+  .logo {
+    width: 33%;
+    padding-left: unset;
+    margin-left: 5px;
   }
 }
 

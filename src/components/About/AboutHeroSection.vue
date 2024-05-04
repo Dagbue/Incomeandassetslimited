@@ -1,5 +1,9 @@
 <template>
-    <div class="alpha">
+  <div>
+
+    <div v-show="!mobile" class="alpha">
+
+      <p class="mobile-header">Trade without Tradeoffs</p>
 
       <div class="section-alpha">
 
@@ -39,18 +43,83 @@
 
 
     </div>
+
+    <div v-show="mobile" class="alpha-mobile" >
+
+      <p class="mobile-header">Trade without tradeoffs</p>
+
+      <div class="section-1-mobile">
+
+        <div class="content-1-mobile">
+          <p class="text-1-mobile">Withdrawals</p>
+          <p class="text-2-mobile">Instant withdrawals</p>
+          <p class="text-3-mobile">Get your deposits and withdrawals approved the moment you click the button.</p>
+        </div>
+
+        <div class="content-1-mobile">
+          <p class="text-1-mobile">Spreads</p>
+          <p class="text-2-mobile">Tight & stable spreads</p>
+          <p class="text-3-mobile">Trade confidently in times of volatility with low and reliable spreads.</p>
+        </div>
+
+      </div>
+
+      <img src="@/assets/abouthero.jpeg" alt="image" class="mobile-image">
+
+      <div class="section-1-mobile">
+
+        <div class="content-1-mobile">
+          <p class="text-1-mobile">Execution speed</p>
+          <p class="text-2-mobile">Ultra-fast execution</p>
+          <p class="text-3-mobile">Execute your orders in milliseconds, no matter how big they are.</p>
+        </div>
+
+        <div class="content-1-mobile">
+          <p class="text-1-mobile">Swaps</p>
+          <p class="text-2-mobile">No overnight fees</p>
+          <p class="text-3-mobile">Hold your leveraged positions for as long as you like, swap-free. T&C apply.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
 </template>
 
 <script>
 export default {
-  name: "AboutHeroSection"
+  name: "AboutHeroSection",
+  data()  {
+    return {
+      mobile: false,
+      mobileNav: false,
+      windowWidth: false,
+    }
+  },
+  created() {
+    window.addEventListener('resize', this.checkScreen);
+    this.checkScreen();
+  },
+  methods: {
+    checkScreen() {
+      this.windowWidth = window.innerWidth;
+      if (this.windowWidth <= 700){
+        this.mobile = true;
+        return;
+      }
+      this.mobile = false;
+      this.mobileNav = false;
+      return;
+    },
+  }
 }
 </script>
 
 <style scoped>
 .alpha{
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-color: #070e20;
   background-image: url("@/assets/abouthero.jpeg");
   background-size: 50vh, cover;
@@ -58,6 +127,19 @@ export default {
   background-position: bottom, center;
   z-index: 100;
   color: #FFFFFF;
+}
+.alpha-mobile{
+  width: 100%;
+  height: 100%;
+  background-color: #070e20;
+  padding-bottom: 5%;
+}
+.mobile-header{
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 5%;
+  font-size: 25px;
+  font-family: 'BR-Firma-Bold', sans-serif;
 }
 .section-alpha{
   display: flex;
@@ -70,10 +152,22 @@ export default {
   margin-top: 15%;
 }
 
+
 .content-1{
   margin-bottom: 15%;
   width: 70%;
   text-align: center;
+}
+
+.content-1-mobile{
+  margin-bottom: 5%;
+  width: 70%;
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 6%;
+  color: #FFFFFF;
 }
 
 .left{
@@ -97,6 +191,27 @@ export default {
 .text-2{
   margin-bottom: 5px;
   font-size: 18px;
+}
+
+.text-1-mobile{
+  margin-bottom: 10px;
+  padding: 7px 15px;
+  border-radius: 20px;
+  background-color: #6c8595;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.text-2-mobile{
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.mobile-image{
+  width: 50%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
@@ -220,31 +335,6 @@ main p{
 @media screen and (max-width: 500px) {
 
 
-  .left{
-    position: relative;
-    left: unset;
-  }
-
-  .right{
-    position: relative;
-    right: unset;
-    left: 4vh;
-  }
-
-  .text-2{
-    color: #0f171c;
-    font-family: 'BR-Firma-Bold', sans-serif;
-  }
-
-  .text-3{
-    color: #0f171c;
-    font-family: 'BR-Firma-Bold', sans-serif;
-  }
-
-
-  .section-1{
-    padding-top: 25%;
-  }
 
 }
 </style>

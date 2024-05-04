@@ -29,13 +29,16 @@
             </div>
 
             <div class="form-group-2">
-              <input
-                  type="checkbox"
-                  placeholder="Remember-Me"
-                  id="remember-me"
-                  class="checkbox"
-              />
-              <label for="remember-me" class="checkbox-text">Remember me</label>
+              <div class="law-seprate">
+                <input
+                    type="checkbox"
+                    placeholder="Remember-Me"
+                    id="remember-me"
+                    class="checkbox"
+                />
+                <label for="remember-me" class="checkbox-text">Remember me</label>
+              </div>
+
               <a  class="forgot-password" @click="onPostClick2" >Forgot Password</a>
             </div>
 
@@ -266,6 +269,10 @@ form {
 .form-group-2 {
   padding-top: 15px;
   padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
 }
 
 .checkbox-text {
@@ -333,8 +340,8 @@ button{
   margin-top: 10%;
 }
 .space{
-  padding-top: 11.5px;
-  padding-bottom: 11.5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-right: 10px;
   border: 1px solid #d0d5dd;
   border-left-style: none;
