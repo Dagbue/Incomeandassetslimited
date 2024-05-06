@@ -19,6 +19,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
   {
+    path: '/loans',
+    name: 'loans',
+    component: () => import(/* webpackChunkName: "testimonials" */ '../views/LoanView.vue')
+  },
+  {
     path: '/testimonials',
     name: 'testimonials',
     component: () => import(/* webpackChunkName: "testimonials" */ '../views/TestimonialsView.vue')
@@ -129,6 +134,18 @@ const routes = [
         name: 'fundWallet',
         component: () => import(/* webpackChunkName: "overView" */ '../views/DashBoard/FundWallet.vue'),
         meta: { hideNavigation: true },
+      },
+      {
+        path: '/loan',
+        name: 'loan',
+        component: () => import(/* webpackChunkName: "loan" */ '@/views/DashBoard/Loan.vue'),
+        meta: {hideNavigation: true}
+      },
+      {
+        path: '/loan-dashboard',
+        name: 'LoanDashBoard',
+        component: () => import(/* webpackChunkName: "LoanDashBoard" */ '@/views/DashBoard/LoanDashBoard.vue'),
+        meta: {hideNavigation: true}
       },
       {
         path: '/withdrawal',
@@ -271,6 +288,12 @@ const routes = [
         component: () =>
             import(/* webpackChunkName: "ChangePasswordAdmin" */ "../views/Admin/TradeRequestsAdminUpdate.vue"),
         meta: { hideNavigation: true }
+      },
+      {
+        path: "/loan-request-admin",
+        name: "loanRequestAdmin",
+        component: () => import(/* webpackChunkName: "tradeRequestAdmin" */ "../views/Admin/LoanRequestAdmin.vue"),
+        meta: {hideNavigation: true}
       },
       {
         path: "/add-new-user",

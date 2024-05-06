@@ -54,6 +54,24 @@
           </li>
         </router-link>
 
+        <router-link to="/loan">
+          <li>
+            <a class="hover">
+              <img src="../../assets/walletmana.svg" alt="logo" class="link-img" />
+              <span class="links-name">Loan Request</span>
+            </a>
+          </li>
+        </router-link>
+
+        <router-link to="/loan-dashboard">
+          <li>
+            <a class="hover">
+              <img src="../../assets/dashboardlogo.svg" alt="logo" class="link-img" />
+              <span class="links-name">Loan DashBoard</span>
+            </a>
+          </li>
+        </router-link>
+
         <router-link to="/packages">
           <li>
             <a class="hover">
@@ -124,6 +142,21 @@
           <a>
             <img src="../../assets/coin-stack.svg" alt="logo" class="link-img" />
             <router-link to="/withdrawal" class="">Withdrawal</router-link>
+          </a>
+        </li>
+
+        <li @click="toggleMobileNav2">
+          <a>
+            <img src="../../assets/walletmana.svg" alt="logo" class="link-img" />
+            <router-link to="/loan" style="font-size: 12px;" class="">Loan Request</router-link>
+          </a>
+        </li>
+
+
+        <li @click="toggleMobileNav2">
+          <a>
+            <img src="../../assets/dashboardlogo.svg" alt="logo" class="link-img" />
+            <router-link to="/loan-dashboard" style="font-size: 12px;" class="">Loan DashBoard</router-link>
           </a>
         </li>
         <li @click="toggleMobileNav2">

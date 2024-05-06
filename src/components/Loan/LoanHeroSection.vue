@@ -1,0 +1,188 @@
+<template>
+  <div class="alpha">
+<!--    <p class="section-header-1">There’s a time and a place for risk</p>-->
+<!--    <p class="section-header">Your funds and data are always secure. With Income And Assets Limited you’re protected-->
+<!--      by industry-leading protocols.</p>-->
+
+    <div class="section-alpha">
+
+      <div class="section-1">
+
+        <div class="text-part">
+          <p class="text-3">INSTANT CRYPTO CREDIT LINES</p>
+          <p class="text-1">Get Funds <span>Instantly.</span> <br/>Keep Your Crypto.</p>
+          <p class="text-2">Borrow without selling your crypto with rates as low as 0%. Just top up and your credit
+            line is immediately available.</p>
+
+          <div class="button-part">
+            <button class="btn1" @click="onPostClick2">Login Account</button>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="section-2">
+
+        <img src="https://nexo.com/media/pages/borrow/137f2c7242-1685093545/promo-atf-visual.png" alt="image" class="image" />
+
+      </div>
+
+    </div>
+
+  </div>
+</template>
+
+<script>
+export default {
+  name: "LoanHeroSection",
+  methods: {
+    onPostClick() {
+      this.$router.push("/register");
+    },
+    onPostClick2() {
+      this.$router.push("/login");
+    },
+  },
+}
+</script>
+
+<style scoped>
+/*.alpha{*/
+/*  !*background-color: #f0f2f4;*!*/
+/*  padding-bottom: 3%;*/
+/*  padding-top: 3%;*/
+/*}*/
+.alpha{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: #f4f5f6;
+}
+
+.section-1{
+  width: 50%;
+}
+
+.section-2{
+  width: 50%;
+}
+
+.section-alpha{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.image{
+  width: 75%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 12px;
+}
+
+.text-part{
+  width: 75%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-1{
+  font-size: 50px;
+  line-height: 1.1;
+  font-weight: 500;
+  white-space: pre-line;
+  margin-bottom: 10px;
+  font-family: 'BR-Firma-Bold', sans-serif;
+}
+
+.text-2{
+  margin: 0;
+  font-size: 20px;
+  white-space: pre-line;
+  line-height: 1.4;
+}
+
+.text-3{
+  background-color: rgba(7,14,32,0.9);
+  display: inline-block;
+  color: #FFFFFF;
+  padding: 6px 30px 4px 30px;
+  border-radius: 12px;
+  margin-bottom: 2%;
+  font-family: 'BR-Firma-Light', sans-serif;
+}
+
+.button-part{
+  display: flex;
+  gap: 20px;
+  margin-top: 3%;
+}
+.btn1{
+  background-color: #070e20;
+  border: 1px solid #070e20;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 12px;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  width: 220px;
+}
+
+@media (max-width: 700px) {
+  .section-header{
+    font-size: 16px;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .section-header-1{
+    font-size: 28px;
+  }
+  .section-alpha{
+    display: block;
+  }
+  .section-1{
+    width: 100%;
+  }
+
+  .section-2{
+    width: 100%;
+  }
+
+  .text-1{
+    font-size: 26px;
+    line-height: 24px;
+    margin-bottom: 13px;
+  }
+
+  .text-2{
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .image{
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .text-part{
+    width: 85%;
+  }
+  .section-header-1{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+</style>

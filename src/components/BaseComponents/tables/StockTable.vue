@@ -24,7 +24,7 @@ export default {
       defaultScreen: "general",
       market: "stocks",
       showToolbar: true,
-      colorTheme: "light",
+      colorTheme: "dark",
       locale: "en",
     });
 
@@ -36,6 +36,6 @@ export default {
 <style scoped>
 .tables{
   margin-left: 2%;
-  margin-right: 2%;
+  margin-right: 2.5%;
 }
 </style>

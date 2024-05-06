@@ -36,6 +36,15 @@
           </li>
         </router-link>
 
+        <router-link to="/loan-request-admin">
+          <li>
+            <a class="hover">
+              <img src="../../assets/coin-stack.svg" alt="logo" class="link-img" />
+              <span class="links-name">Loan Request</span>
+            </a>
+          </li>
+        </router-link>
+
         <router-link to="/trade-request-admin">
           <li>
             <a class="hover">
@@ -105,7 +114,7 @@
     <div  class="dropdown-nav-2" v-show="mobileNav" >
 
       <div class="logo">
-        <img src="@/assets/logo.png" alt="logo" class="afo-logo" />
+        <img src="@/assets/logoinverse.png" alt="logo" class="afo-logo" />
       </div>
 
 
@@ -126,6 +135,12 @@
           <a>
             <i class='bx bx-support' ></i>
             <router-link to="/withdrawal-requests" class="">Withdrawal Request</router-link>
+          </a>
+        </li>
+        <li @click="toggleMobileNav2">
+          <a>
+            <img src="../../assets/coin-stack.svg" alt="logo" class="link-img" />
+            <router-link to="/trade-request-admin" class="">Loan Request</router-link>
           </a>
         </li>
         <li @click="toggleMobileNav2">

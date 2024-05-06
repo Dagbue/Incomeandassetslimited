@@ -1,51 +1,29 @@
 <template>
+  <div class="alpha">
 
-    <div class="alpha">
-
-      <div class="header">
-        <p class="text-1">Trade assets from global markets.</p>
-        <p class="text-2">Capitalize on every opportunity with the world’s most popular assets.</p>
-      </div>
-      <div class="header-select">
-        <p @click="changeScreen" class="btn">Cryptos</p>
-        <p @click="changeScreen2" class="btn">Forex</p>
-        <p @click="changeScreen3" class="btn">Stocks</p>
-      </div>
-
-      <crypto-table v-show="this.screen === 'crypto'"/>
-
-      <forex-table v-show="this.screen === 'forex'"/>
-
-      <stock-table v-show="this.screen === 'stocks'"/>
-
+    <div class="header">
+      <p class="text-1">Borrow Against 75+ Assets.</p>
+      <p class="text-2">A variety of digital assets can be used as collateral to secure your Instant
+        Crypto Credit Line.</p>
     </div>
+<!--    <div class="header-select">-->
+<!--      <p @click="changeScreen" class="btn">Cryptos</p>-->
+<!--      <p @click="changeScreen2" class="btn">Forex</p>-->
+<!--      <p @click="changeScreen3" class="btn">Stocks</p>-->
+<!--    </div>-->
 
+    <crypto-table/>
+
+
+  </div>
 </template>
 
 <script>
 import CryptoTable from "@/components/BaseComponents/tables/CryptoTable.vue";
-import ForexTable from "@/components/BaseComponents/tables/ForexTable.vue";
-import StockTable from "@/components/BaseComponents/tables/StockTable.vue";
 
 export default {
-  name: "HomeSection4",
-  components: {StockTable, ForexTable, CryptoTable},
-  data() {
-    return {
-      screen: "crypto",
-    };
-  },
-  methods: {
-    changeScreen() {
-      this.screen = "crypto"
-    },
-    changeScreen2() {
-      this.screen = "forex"
-    },
-    changeScreen3() {
-      this.screen = "stocks"
-    },
-  }
+  name: "LoanSection3",
+  components: {CryptoTable}
 }
 </script>
 

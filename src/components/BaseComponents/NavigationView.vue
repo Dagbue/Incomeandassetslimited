@@ -29,6 +29,13 @@
                 <router-link  to="/about">Company</router-link>
               </div>
             </li>
+
+            <li class="link">
+              <div class="dropdown-navigation">
+                <router-link  to="/loans">Loans</router-link>
+              </div>
+            </li>
+
             <li class="link">
               <div class="dropdown-navigation">
                 <router-link  to="/testimonials">Testimonials</router-link>
@@ -235,64 +242,6 @@ export default {
   padding-bottom: 12px;
 }
 
-.style-4-1 {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #FEF7EC;
-}
-
-.style-4-2 {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #FDECF0;
-}
-
-.style-4-3 {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #EBF1FF;
-}
-
-.style-4-4 {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #FDEBFF;
-}
-.style-4-5 {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #0F0F0F;
-}
-.style-4-6 {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #6E3FF3;
-}
-
 .link {
   display: inline-block;
   list-style: outside none none;
@@ -304,21 +253,6 @@ export default {
   align-content: center;
 }
 
-
-.bxs-chevron-down{
-  color: #191C1F;
-  font-size: 15px;
-}
-
-.bxs-chevron-right{
-  color: #191C1F;
-  font-size: 15px;
-}
-
-
-.link-2:hover{
-  color: #191C1F;
-}
 
 .menu-4{
   display: flex;
@@ -384,44 +318,7 @@ export default {
   text-align: center;
   font-size: 14px;
 }
-/*.auth2:hover{*/
-/*  background-color: transparent;*/
-/*  border: 1px solid #191C1F;*/
-/*  color: #191C1F;*/
-/*}*/
 
-.auth3{
-  background-color: #ffffff;
-  border: 1px solid #ffffff;
-  color: #191C1F;
-  padding: 0.4em 25px 0.5em 30px;
-  border-radius: 12px;
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.25s ease;
-  margin: 0 2.5px;
-  width: 120px;
-  text-align: center;
-  font-size: 14px;
-}
-
-/*.auth3:hover{*/
-/*  border: 1px solid #191C1F*/
-/*}*/
-
-
-.link-2 {
-  padding: 0.3em 0;
-  color:  #191C1F;
-  position: relative;
-  display: inline-block;
-  margin: 0;
-  text-decoration: none;
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
 
 
 .topmost-header {
@@ -455,35 +352,6 @@ export default {
 
 
 
-.topmost-header-2 {
-  text-align: center;
-  /*background-color: #143159;*/
-  padding-top: 10px;
-  padding-bottom: 10.5px;
-  color: #ffffff;
-  /*display: flex;*/
-  /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);*/
-  background-color: #3a3a3a;
-}
-
-.topmost-header-1-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.topmost-header-text-2 {
-  font-size: 15px;
-  padding-left: 28px;
-  font-weight: 900;
-}
-.topmost-header-text-3 {
-  text-decoration: underline;
-  padding-left: 5px;
-}
-
-
 i{
   padding-right: 4px;
   font-size: 14px;
@@ -504,8 +372,6 @@ i{
   height: 100%;
   background-color: #f9f9f9;
   font-size: 20px;
-  /*text-align: left;*/
-  /*padding-left: 20px;*/
 }
 
 .logo2{
@@ -515,7 +381,6 @@ i{
 }
 
 .dropdown-nav li {
-  /*margin-top: 12%;*/
   overflow: hidden;
   list-style: none;
   height: 100%;
@@ -562,10 +427,7 @@ i{
   white-space: nowrap;
 }
 
-/*.dropdown-nav li:hover a,*/
-/*.dropdown-nav.current a {*/
-/*  color: #D23535;*/
-/*}*/
+
 
 hr {
   color: white;
@@ -575,12 +437,6 @@ hr {
   margin-top: 95px;
 }
 
-
-.fg--search {
-  background: white;
-  position: relative;
-  width: 210px;
-}
 .fg--search input {
   width: 100%;
   padding: 9px;
@@ -602,11 +458,6 @@ hr {
   right: 0;
   padding: 10px;
   margin-top: 3.5px;
-}
-
-.fa-search{
-  color: #667085;
-  /*margin-right: 10px;*/
 }
 
 
@@ -638,34 +489,7 @@ a {
 }
 
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #FFF;
-  min-width: 250px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-  z-index: 1;
-  padding: 10px 20px;
-  border-radius: 26px;
-  border: 10px solid #FEF7EC;
-}
 
-
-.dropdown-content-2 {
-  display: none;
-  position: absolute;
-  background-color: #FFF;
-  min-width: 250px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-  z-index: 1;
-  padding: 10px 20px;
-  border-radius: 26px;
-  border: 10px solid #FDECF0;
-}
-.hover-2:hover{
-  background-color: #FDECF0;
-  border-radius: 12px;
-}
 .dropdown-navigation:hover .dropdown-content-2 {
   display: block;
 }
@@ -673,133 +497,6 @@ a {
   display: block;
 }
 
-
-.dropdown-content-3 {
-  display: none;
-  position: absolute;
-  background-color: #FFF;
-  min-width: 250px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-  z-index: 1;
-  padding: 10px 20px;
-  border-radius: 26px;
-  border: 10px solid #EBF1FF;
-}
-.hover-3:hover{
-  background-color: #EBF1FF;
-  border-radius: 12px;
-}
-.dropdown-navigation:hover .dropdown-content-3 {
-  display: block;
-}
-.dropdown-navigation-2:hover .dropdown-content-3 {
-  display: block;
-}
-
-.dropdown-content-4 {
-  display: none;
-  position: absolute;
-  background-color: #FFF;
-  min-width: 250px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-  z-index: 1;
-  padding: 10px 20px;
-  border-radius: 26px;
-  border: 10px solid #FDEBFF;
-}
-.hover-4:hover{
-  background-color: #FDEBFF;
-  border-radius: 12px;
-}
-.dropdown-navigation:hover .dropdown-content-4 {
-  display: block;
-}
-.dropdown-navigation-2:hover .dropdown-content-4 {
-  display: block;
-}
-
-
-.dropdown-content-5 {
-  display: none;
-  position: absolute;
-  background-color: #F7F8F8;
-  min-width: 250px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-  z-index: 1;
-  padding: 10px 20px;
-  border-radius: 26px;
-  border: 10px solid #191C1F;
-}
-.hover-5:hover{
-  background-color: #e5e7e7;
-  border-radius: 12px;
-}
-.dropdown-navigation:hover .dropdown-content-5 {
-  display: block;
-}
-.dropdown-navigation-2:hover .dropdown-content-5 {
-  display: block;
-}
-
-
-
- .dropdown-content-6 {
-   display: none;
-   position: absolute;
-   background-color: #F7F8F8;
-   min-width: 250px;
-   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-   z-index: 1;
-   padding: 10px 20px;
-   border-radius: 26px;
-   border: 10px solid #6E3FF3;
- }
-.hover-6:hover{
-  background-color: #6E3FF3;
-  border-radius: 12px;
-}
-.hover-6:hover p{
-  color: #FFFFFF;
-}
-.dropdown-navigation:hover .dropdown-content-6 {
-  display: block;
-}
-.dropdown-navigation-2:hover .dropdown-content-6 {
-  display: block;
-}
-
-.text-1{
-  color:  #191C1F;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 18px; /* 128.571% */
-  text-align: left;
-  margin-bottom: 5px;
-}
-
-.text-2{
-  color: #697582;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px; /* 138.462% */
-  text-align: left;
-}
-
-
-.hover:hover{
-  background-color: #FEF7EC;
-  border-radius: 12px;
-}
-
-.dropdown-navigation:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-navigation-2:hover .dropdown-content {
-  display: block;
-}
 
 
 .accordion-wrapper {
@@ -863,11 +560,6 @@ a {
   display: block;
 }
 
-.content-inner{
-  display: flex;
-  align-items: center;
-  align-content: center;
-}
 
 .content-inner p{
   padding-left: 2%;
@@ -880,10 +572,7 @@ a {
   align-items: center;
 }
 
-.bxs-dashboard{
-  color: #01675b;
-  font-size: 20px;
-}
+
 
 .title-content-para{
   padding-left: 5px;
@@ -893,26 +582,15 @@ a {
 }
 
 
-.content-2{
-  padding-left: 10px;
-}
-
-
 
 @media (min-width: 1286px) {
-  .hamburger {
-    display: none;
-  }
-  /*.menu-4{*/
-  /*  display: flex;*/
-  /*}*/
+
 }
 
 @media (max-width: 990px) {
   .style-4 {
     display: flex;
     justify-content: space-between;
-    /*margin-top: 5px;*/
   }
   .logo {
     width: 20%;
@@ -953,20 +631,6 @@ a {
     margin-top: 95%;
   }
 
-
-  .topmost-header-text-2 {
-    font-size: 12px;
-    padding-left: 5px;
-  }
-
-  .topmost-header-text-3 {
-    text-decoration: underline;
-    padding-left: 4px;
-  }
-
-  .bx-bell{
-    font-size: 25px;
-  }
   .logo {
     width: 33%;
     padding-left: unset;
