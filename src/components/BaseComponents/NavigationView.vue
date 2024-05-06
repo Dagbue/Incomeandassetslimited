@@ -88,6 +88,19 @@
               <input type="checkbox" class="accordion" hidden />
               <div class="title">
                 <div class="title-content">
+                  <router-link  to="/loans">
+                    <p class="title-content-para" @click="toggleMobileNav2">Loans</p>
+                  </router-link>
+                </div>
+              </div>
+
+
+            </label>
+
+            <label class="accordion-wrapper">
+              <input type="checkbox" class="accordion" hidden />
+              <div class="title">
+                <div class="title-content">
                   <router-link  to="/testimonials">
                   <p class="title-content-para" @click="toggleMobileNav2">Testimonials</p>
                   </router-link>
