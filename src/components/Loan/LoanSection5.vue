@@ -6,7 +6,7 @@
 <!--        <p class="download-sub">support@incomeandassetslimited.com</p>-->
 <!--      </div>-->
       <div class="seperate mobile">
-        <p class="download-sub">Open your Nexo account right now and monetize your digital assets within minutes.</p>
+        <p class="download-sub">Open your Income And Assets Limited account right now and monetize your digital assets within minutes.</p>
       </div>
 
       <div class="button-seprate" @click="onPostClick">
@@ -127,12 +127,19 @@ i{
 
 @media (max-width: 700px){
   .alpha-2{
-    width: 400px;
+    width: 410px;
     margin-top: 5%;
+    height: 285px;
+    padding: 0 15px;
   }
 
-  .last-text{
-    padding-top: 8%;
+  .last-text {
+    font-size: 28px;
+    line-height: 35px;
+    padding-top: 10.5%;
+  }
+  button{
+    margin-top: unset;
   }
 }
 

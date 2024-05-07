@@ -329,6 +329,21 @@ export default {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .section-2-alpha{
+    display: block;
+    margin-bottom: 6%;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .vl {
+    display: none;
+  }
+
+  .section-2-content{
+    padding-bottom: 5%;
+  }
 }
 
 

@@ -46,7 +46,6 @@ export default {
 }
 
 .section-2{
-  margin-bottom: -10px;
 }
 
 .text-1{
@@ -139,6 +138,9 @@ export default {
   }
 
 
+  .btn-1{
+    height: 40px;
+  }
 
   .text-2{
     width: 85%;

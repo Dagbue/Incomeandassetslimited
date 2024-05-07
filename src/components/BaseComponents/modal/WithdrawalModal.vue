@@ -21,7 +21,7 @@
 
 
         <br/>
-        <button @click="$emit('close')">cancel</button>
+        <button @click="close">cancel</button>
 
       </div>
 

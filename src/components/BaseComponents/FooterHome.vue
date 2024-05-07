@@ -56,15 +56,15 @@
                 </div>
               </div>
             </div>
-            <div class="social">
-<!--              <div class="social-part-1">-->
-<!--                <i class='bx bxl-facebook'></i>-->
-<!--                <i class='bx bxl-twitter' ></i>-->
-<!--                <i class='bx bxl-instagram' ></i>-->
-<!--                <i class='bx bxl-youtube' ></i>-->
-<!--              </div>-->
-              <img src="@/assets/google-play.svg" alt="" class="google" />
-            </div>
+<!--            <div class="social">-->
+<!--&lt;!&ndash;              <div class="social-part-1">&ndash;&gt;-->
+<!--&lt;!&ndash;                <i class='bx bxl-facebook'></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                <i class='bx bxl-twitter' ></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                <i class='bx bxl-instagram' ></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                <i class='bx bxl-youtube' ></i>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--              <img src="@/assets/google-play.svg" alt="" class="google" />-->
+<!--            </div>-->
           </div>
         </div>
       </div>

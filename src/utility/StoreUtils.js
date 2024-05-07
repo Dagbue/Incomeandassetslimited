@@ -51,6 +51,15 @@ class StoreUtils {
     sbucket: {
       uploadEncodedFile: "sbucket/uploadEncodedFile",
     },
+    loan: {
+      loanCreate: "loan/loanCreate",
+      updateLoan: "loan/updateLoan",
+      updateLoanStatus: "loan/updateLoanStatus",
+      deleteLoan: "loan/deleteLoan",
+      readAllLoan: "loan/readAllLoan",
+      readLoanById: "loan/readLoanById",
+      readUserLoan: "loan/readUserLoan",
+    },
   };
 
   static mutations = {
@@ -97,6 +106,13 @@ class StoreUtils {
     sbucket: {
       updateS3BucketLoading: "sbucket/updateS3BucketLoading",
     },
+    loan: {
+      updateLoading: "loan/updateLoading",
+      updateLoan: "loan/updateLoan",
+      updateAllLoan: "loan/updateAllLoan",
+      updateReadLoanById: "loan/updateReadLoanById",
+      updateReadUserLoan: "loan/updateReadUserLoan",
+    },
   };
 
   static getters = {
@@ -133,6 +149,12 @@ class StoreUtils {
       getPaymentWallet: "paymentWallet/getPaymentWallet",
       getAllPaymentWallet: "paymentWallet/getAllPaymentWallet",
       getReadPaymentWalletById: "paymentWallet/getReadPaymentWalletById",
+    },
+    loan: {
+      getLoan: "loan/getLoan",
+      getAllLoan: "loan/getAllLoan",
+      getReadLoanById: "loan/getReadLoanById",
+      getReadUserLoan: "loan/getReadUserLoan",
     },
   };
 

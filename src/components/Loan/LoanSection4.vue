@@ -587,13 +587,17 @@ details {
     font-size: 27px;
   }
 
+
   .section-header{
-    margin-left: 3%;
-    margin-right: 3%;
+    width: 85%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
 @media (max-width: 500px) {
+
 }
 
 </style>

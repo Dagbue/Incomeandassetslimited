@@ -157,17 +157,41 @@ export default {
   }
 
   .text-1{
-    font-size: 26px;
-    line-height: 24px;
+    font-size: 28px;
+    line-height: 30px;
     margin-bottom: 13px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
   }
 
   .text-2{
     font-size: 16px;
     line-height: 1.3;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
   }
+
+  .text-3{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
   .image{
     width: 90%;
+  }
+
+  .button-part{
+    justify-content: center;
+  }
+  .alpha{
+    padding-top: 10%;
+    /*padding-bottom: 5%;*/
   }
 }
 
