@@ -143,9 +143,9 @@ export default {
 
 dialog {
   position: fixed;
-  top: 10vh;
+  top: 8vh;
   width: 32rem;
-  height: 30rem;
+  height: 32rem;
   left: calc(50% - 8.5rem);
   margin: 0;
   background-color: transparent;
@@ -159,10 +159,9 @@ dialog {
   display: block;
   overflow: hidden;
   width: 420px;
-  height: 630px;
+  height: 655px;
   /*height: auto;*/
   padding: 24px;
-
   border-radius: 5px;
   background-color: #0f171c;
   border: 0.5px solid #3C4A57FF;

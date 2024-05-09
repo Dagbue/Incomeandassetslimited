@@ -135,7 +135,7 @@ export default {
       statusUpdate2:"lost",
       depositValue: 0,
       currentPage: 1,
-      itemsPerPage: 8,
+      itemsPerPage: 7,
       searchQuery: "", // Data property to hold the search input
     }
   },
@@ -477,7 +477,6 @@ td {
 .empty-state{
   text-align: center;
   margin-top: 7%;
-  margin-right: 8%;
 }
 
 .empty-state-text-1{

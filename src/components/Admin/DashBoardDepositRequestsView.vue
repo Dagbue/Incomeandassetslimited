@@ -450,14 +450,12 @@ td {
 .empty-state{
   text-align: center;
   margin-top: 7%;
-  margin-right: 8%;
 }
 
 .empty-state-text-1{
   font-weight: 600;
   font-size: 18px;
   line-height: 20px;
-  color: #ffffff;
   padding-top: 0.5%;
   padding-bottom: 0.5%;
 }
@@ -467,7 +465,6 @@ td {
   font-size: 14px;
   line-height: 20px;
   text-align: center;
-  color: #ffffff;
   padding-bottom: 1.25%;
 }
 

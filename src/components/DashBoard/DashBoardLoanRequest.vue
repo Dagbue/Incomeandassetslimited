@@ -106,7 +106,7 @@
                 data-name="Field"
             >
               <option selected disabled value="">Deposit Method List</option>
-                            <option :value="null" disabled>Deposit Method List</option>
+              <option :value="null" disabled>Deposit Method List</option>
               <option value="Bitcoin">Bitcoin</option>
               <option value="Ethereum">Ethereum</option>
               <option value="USDT">USDT</option>
@@ -178,15 +178,16 @@
                   style="
                     border: 0.5px solid #5d78ff;
                     background-color: #5d78ff;"
+                  :loading="loading"
                   class="button"
               >Proceed</base-button>
             </div>
           </div>
         </div>
 
-<!--        <p class="text-block-51" style="padding-top: 10px; color: #6c757d;" >-->
-<!--          Note: Deposits will be credited to your Assets Management Limited account after 2 network confirmations.-->
-<!--        </p>-->
+        <!--        <p class="text-block-51" style="padding-top: 10px; color: #6c757d;" >-->
+        <!--          Note: Deposits will be credited to your Assets Management Limited account after 2 network confirmations.-->
+        <!--        </p>-->
 
         <p class="text-block-51" style="padding-top: 10px; color: #6c757d;" v-if="this.model.loanPlan === 'Personal Loan'">
           NB: loan amount ranges from $10,000 to $500,000. If you wish to make a prepayment, a fee of
@@ -225,7 +226,7 @@ export default {
   components: {BaseButton, FundWalletModal2},
   computed:{
     ...mapState({
-      // loading: state => state.loan.loading,
+      loading: state => state.loan.loading,
       auth: state => state.auth,
     }),
   },
@@ -302,7 +303,6 @@ export default {
       this.userInfo = JSON.parse(storedObject);
     }
   },
-
   mounted() {
     this.generateRandomString()
 

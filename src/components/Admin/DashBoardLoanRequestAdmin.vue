@@ -33,7 +33,7 @@
     </div>
 
     <div class="section-5">
-      <div class="empty-state">
+      <div class="empty-state" v-if="this.allLoans.loan.length === 0">
         <img src="@/assets/empty.svg" alt="empty">
         <p class="empty-state-text-1">You have nothing to see</p>
         <p class="empty-state-text-2">This is where your Loan Requests will appear</p>
@@ -44,70 +44,70 @@
       </div>
 
 
-<!--      <div class="table" v-if="this.allLoans.loan.length >0">-->
-<!--        <table>-->
-<!--          <tr>-->
-<!--            <th>Client Name</th>-->
-<!--            <th>Amount</th>-->
-<!--            <th>Loan Plan</th>-->
-<!--            <th>Loan Deposit Method</th>-->
-<!--            <th>Loan Prepayment Fee</th>-->
-<!--            <th>Date Applied</th>-->
-<!--            <th>Status</th>-->
-<!--            <th>Action</th>-->
-<!--          </tr>-->
+      <div class="table" v-if="this.allLoans.loan.length >0">
+        <table>
+          <tr>
+            <th>Client Name</th>
+            <th>Amount</th>
+            <th>Loan Plan</th>
+            <th>Loan Deposit Method</th>
+            <th>Loan Prepayment Fee</th>
+            <th>Date Applied</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
 
-<!--          <div v-if="loading">-->
-<!--            <div class="table-content">-->
-<!--              <div class="name-wrapper-body">-->
-<!--                <p-->
-<!--                    class="table-body-text"-->
-<!--                    style="position: absolute;-->
-<!--                    margin-left: 45%"-->
-<!--                >-->
-<!--                  <base-loader2/>-->
-<!--                </p>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
+          <div v-if="loading">
+            <div class="table-content">
+              <div class="name-wrapper-body">
+                <p
+                    class="table-body-text"
+                    style="position: absolute;
+                    margin-left: 45%"
+                >
+                  <base-loader2/>
+                </p>
+              </div>
+            </div>
+          </div>
 
-<!--          <tbody v-else v-for="child in paginatedItems" :key="child.key">-->
-<!--          <tr>-->
-<!--            <td data-label="Client Name">{{child.firstName}} {{child.lastName}}</td>-->
-<!--            <td data-label="Amount">{{child.amount}}</td>-->
-<!--            <td data-label="Loan Plan">{{child.loanPlan}}</td>-->
-<!--            <td data-label="Loan Deposit Method">{{child.loanDepositMethod}}</td>-->
-<!--            <td data-label="Loan Prepayment Fee">{{child.loanPrepaymentFee}}</td>-->
-<!--            <td data-label="Date Applied">{{child.createdAt | formatDate}}</td>-->
-<!--            <td data-label="Status">-->
-<!--              <div>-->
-<!--                <p v-if="child.loanStatus === 'approved'" class="status-approved">{{child.loanStatus | lowercase}}</p>-->
-<!--                <p v-if="child.loanStatus === 'declined'" class="status-declined">{{child.loanStatus | lowercase}}</p>-->
-<!--                <p v-if="child.loanStatus === 'pending'" class="status-pending">{{child.loanStatus | lowercase}}</p>-->
-<!--              </div>-->
-<!--            </td>-->
-<!--            <td data-label="Action">-->
-<!--              <div v-if="child.loanStatus === 'pending'">-->
-<!--                <button class="btn" @click="approve(child)">Approve</button>-->
-<!--                <button class="btn-2" @click="decline(child)">Decline</button>-->
-<!--              </div>-->
+          <tbody v-else v-for="child in paginatedItems" :key="child.key">
+          <tr>
+            <td data-label="Client Name">{{child.firstName}} {{child.lastName}}</td>
+            <td data-label="Amount">{{child.amount}}</td>
+            <td data-label="Loan Plan">{{child.loanPlan}}</td>
+            <td data-label="Loan Deposit Method">{{child.loanDepositMethod}}</td>
+            <td data-label="Loan Prepayment Fee">{{child.loanPrepaymentFee}}</td>
+            <td data-label="Date Applied">{{child.createdAt | formatDate}}</td>
+            <td data-label="Status">
+              <div>
+                <p v-if="child.loanStatus === 'approved'" class="status-approved">{{child.loanStatus | lowercase}}</p>
+                <p v-if="child.loanStatus === 'declined'" class="status-declined">{{child.loanStatus | lowercase}}</p>
+                <p v-if="child.loanStatus === 'pending'" class="status-pending">{{child.loanStatus | lowercase}}</p>
+              </div>
+            </td>
+            <td data-label="Action">
+              <div v-if="child.loanStatus === 'pending'">
+                <button class="btn" @click="approve(child)">Approve</button>
+                <button class="btn-2" @click="decline(child)">Decline</button>
+              </div>
 
-<!--              <p class="status-declined-2" v-if="child.loanStatus === 'declined'">Already Declined</p>-->
-<!--              <p class="status-approved-2" v-if="child.loanStatus === 'approved'">Already Approved</p>-->
-<!--            </td>-->
-<!--          </tr>-->
-<!--          </tbody>-->
-<!--        </table>-->
-<!--        <div class="pagination">-->
-<!--          <button @click="previousPage" :disabled="currentPage === 1" class="previous">Previous</button>-->
-<!--          <div class="page-indicator">-->
-<!--            Page {{ currentPage }} of {{ totalPages }}-->
-<!--          </div>-->
-<!--          <button @click="nextPage" :disabled="currentPage === totalPages" class="previous">Next</button>-->
-<!--        </div>-->
+              <p class="status-declined-2" v-if="child.loanStatus === 'declined'">Already Declined</p>
+              <p class="status-approved-2" v-if="child.loanStatus === 'approved'">Already Approved</p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="pagination">
+          <button @click="previousPage" :disabled="currentPage === 1" class="previous">Previous</button>
+          <div class="page-indicator">
+            Page {{ currentPage }} of {{ totalPages }}
+          </div>
+          <button @click="nextPage" :disabled="currentPage === totalPages" class="previous">Next</button>
+        </div>
 
 
-<!--      </div>-->
+      </div>
 
     </div>
   </div>
@@ -116,9 +116,12 @@
 <script>
 import {mapState} from "vuex";
 import StoreUtils from "@/utility/StoreUtils";
+import BaseLoader2 from "@/components/BaseComponents/tables/BaseLoader2.vue";
 
 export default {
   name: "DashBoardLoanRequestAdmin",
+  components: {BaseLoader2},
+
   data () {
     return {
       SelectEmail: "",

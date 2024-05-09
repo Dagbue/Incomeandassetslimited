@@ -1,22 +1,22 @@
 <template>
   <div class="alpha">
 
-<!--    <div style="color: white;" class="section-1-alpha">-->
-<!--      <p class="text-1">User Profile</p>-->
-<!--      <hr/>-->
-<!--      <div class="section-1-part-1">-->
-<!--        <img src="@/assets/Avatar.svg" alt="avatar" class="avatar" />-->
-<!--        <div>-->
-<!--          <p>User Name</p>-->
-<!--          <p>User Email</p>-->
-<!--        </div>-->
-<!--      </div>-->
+    <!--    <div style="color: white;" class="section-1-alpha">-->
+    <!--      <p class="text-1">User Profile</p>-->
+    <!--      <hr/>-->
+    <!--      <div class="section-1-part-1">-->
+    <!--        <img src="@/assets/Avatar.svg" alt="avatar" class="avatar" />-->
+    <!--        <div>-->
+    <!--          <p>User Name</p>-->
+    <!--          <p>User Email</p>-->
+    <!--        </div>-->
+    <!--      </div>-->
 
-<!--      <div class="referral-part">-->
-<!--        <input type="text" v-model="reflink" class="link-box"/>-->
-<!--        <button class="link-button">Copy Link</button>-->
-<!--      </div>-->
-<!--    </div>-->
+    <!--      <div class="referral-part">-->
+    <!--        <input type="text" v-model="reflink" class="link-box"/>-->
+    <!--        <button class="link-button">Copy Link</button>-->
+    <!--      </div>-->
+    <!--    </div>-->
 
 
     <div style="color: white;" class="section-2-alpha">
@@ -73,13 +73,13 @@
           <div class="separate">
 
             <div class="space">
-              <label>BTC Balance</label>
-              <input type="number" v-model="btcBalance"  class="form-input"/>
+              <label>Deposited Amount</label>
+              <input type="number" v-model="totalDepositedAmount"  class="form-input"/>
             </div>
 
             <div class="space">
-              <label>Invested Amount</label>
-              <input type="number" v-model="totalDepositedAmount"  class="form-input"/>
+              <label>Withdrawn Amount</label>
+              <input type="number" v-model="totalWithdrawals"  class="form-input"/>
             </div>
 
           </div>
@@ -87,8 +87,37 @@
           <div class="separate">
 
             <div class="space">
-              <label>withdrawn Amount</label>
-              <input type="number" v-model="totalWithdrawals"  class="form-input"/>
+              <label>Total Profits</label>
+              <input type="number" v-model="totalProfits"  class="form-input"/>
+            </div>
+
+            <div class="space">
+              <label>Loan Requested</label>
+              <input type="text" v-model="totalLoanRequested"  class="form-input"/>
+            </div>
+
+          </div>
+
+          <div class="separate">
+
+            <div class="space">
+              <label>Loan Prepayment Fee</label>
+              <input type="number" v-model="loanPrepaymentFee"  class="form-input"/>
+            </div>
+
+            <div class="space">
+              <label>Loan Plan</label>
+              <input type="text" v-model="loanPlan"  class="form-input"/>
+            </div>
+
+          </div>
+
+          <div class="separate">
+
+
+            <div class="space">
+              <label>Date Created</label>
+              <input type="text" v-model="createdAt"   class="form-input"/>
             </div>
 
             <div class="space">
@@ -101,9 +130,21 @@
           <div class="separate">
 
             <div class="space">
-              <label>status</label>
-              <p class="edit">current status {{userStatus}}</p>
-<!--              <input type="text" v-model="userStatus" required="required" class="form-input"/>-->
+              <label>Loan status</label>
+              <p class="edit">current status : {{loanStatus}}</p>
+              <!--              <input type="text" v-model="userStatus" required="required" class="form-input"/>-->
+              <select v-model="loanStatus"  class="form-input">
+                <option selected disabled value="">select status</option>
+                <option :value="null" disabled>select status</option>
+                <option value="pending">Pending</option>
+                <option value="approved">Approved</option>
+              </select>
+            </div>
+
+            <div class="space">
+              <label>User Account status</label>
+              <p class="edit">current status : {{userStatus}}</p>
+              <!--              <input type="text" v-model="userStatus" required="required" class="form-input"/>-->
               <select v-model="userStatus"  class="form-input">
                 <option selected disabled value="">select status</option>
                 <option :value="null" disabled>select status</option>
@@ -112,23 +153,18 @@
               </select>
             </div>
 
-            <div class="space">
-              <label>Date Created</label>
-              <input type="text" v-model="createdAt"   class="form-input"/>
-            </div>
-
           </div>
 
 
-<!--            <div style="margin-left: 3%;" class="space">-->
-<!--              <label>status</label>-->
-<!--              <input type="text" v-model="userStatus" required="required" class="form-input"/>-->
-<!--            </div>-->
+          <!--            <div style="margin-left: 3%;" class="space">-->
+          <!--              <label>status</label>-->
+          <!--              <input type="text" v-model="userStatus" required="required" class="form-input"/>-->
+          <!--            </div>-->
 
 
 
           <div class="btn-alpha">
-<!--            <p class="btn">Update Details</p>-->
+            <!--            <p class="btn">Update Details</p>-->
             <base-button
                 style="
                   background-color: #5d78ff;
@@ -167,6 +203,13 @@ export default {
       totalDepositedAmount: "",
       totalWithdrawals:"",
       twoFactorAuthenticationCode: "",
+      totalProfits: "",
+      totalLoanRequested: "",
+      loanPrepaymentFee: "",
+      loanPlan:"",
+      loanStatus: "",
+
+
       createdAt: "",
       userStatus: "",
     }
@@ -210,6 +253,12 @@ export default {
       this.twoFactorAuthenticationCode = this.readUserById.user.twoFactorAuthenticationCode;
       this.createdAt = this.readUserById.user.createdAt;
       this.userStatus = this.readUserById.user.userStatus;
+
+      this.totalProfits = this.readUserById.user.totalProfits;
+      this.totalLoanRequested = this.readUserById.user.totalLoanRequested;
+      this.loanPrepaymentFee = this.readUserById.user.loanPrepaymentFee;
+      this.loanPlan = this.readUserById.user.loanPlan;
+      this.loanStatus = this.readUserById.user.loanStatus;
     },
 
     async updateDetails() {
@@ -225,6 +274,11 @@ export default {
         totalDepositedAmount: this.totalDepositedAmount,
         totalWithdrawals: this.totalWithdrawals,
         twoFactorAuthenticationCode: this.twoFactorAuthenticationCode,
+        totalProfits : this.totalProfits,
+        totalLoanRequested : this.totalLoanRequested,
+        loanPrepaymentFee : this.loanPrepaymentFee,
+        loanPlan : this.loanPlan,
+        loanStatus : this.loanStatus,
         // createdAt: this.createdAt,
         userStatus: this.userStatus,
       })
