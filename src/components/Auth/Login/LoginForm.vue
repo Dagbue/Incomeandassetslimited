@@ -228,7 +228,7 @@ form {
 .wrapper .form-group input::placeholder {
   color: var(--black-color);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .btn,

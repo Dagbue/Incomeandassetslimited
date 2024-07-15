@@ -172,10 +172,11 @@ export default {
 }
 
 .card-big-text {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 5px;
   color: #ffffff;
   padding-bottom: 10px;
+  width: 100%;
 }
 
 

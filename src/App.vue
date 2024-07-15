@@ -1136,6 +1136,13 @@ export default {
 
         this.currentMessageIndex++; // Move to the next message
       }, intervalDuration);
+    },
+
+    applyGlobalInputStyles() {
+      const inputs = document.querySelectorAll('input[type="email"], input[type="text"], input[type="password"], input[type="number"]');
+      inputs.forEach(input => {
+        input.style.fontSize = '16px';
+      });
     }
 
 
@@ -1171,7 +1178,8 @@ export default {
   },
 
   mounted() {
-    this.showToast()
+    this.showToast();
+    this.applyGlobalInputStyles();
   }
 }
 
