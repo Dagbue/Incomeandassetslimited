@@ -212,7 +212,7 @@ export default {
         additionalComment : this.model.additionalComment
       })
       await StoreUtils.dispatch(StoreUtils.actions.paymentWallet.readPaymentWalletById, {
-        walletId: 1,
+        walletId: 2,
       })
       StoreUtils.rootGetters(StoreUtils.getters.paymentWallet.getReadPaymentWalletById)
       this.selectedItem = this.depositMethod;

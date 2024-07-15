@@ -123,7 +123,7 @@ export default {
 
 
     StoreUtils.dispatch(StoreUtils.actions.paymentWallet.readPaymentWalletById, {
-      walletId: 1,
+      walletId: 2,
     })
   }
 }
@@ -143,7 +143,7 @@ export default {
 
 dialog {
   position: fixed;
-  top: 8vh;
+  top: 6vh;
   width: 32rem;
   height: 32rem;
   left: calc(50% - 8.5rem);
@@ -159,7 +159,7 @@ dialog {
   display: block;
   overflow: hidden;
   width: 420px;
-  height: 655px;
+  height: 700px;
   /*height: auto;*/
   padding: 24px;
   border-radius: 5px;
@@ -217,7 +217,7 @@ dialog {
 
 .text-5{
   font-weight: 400;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 24px;
   color: #ffffff;
   padding-top: 2%;
@@ -290,8 +290,8 @@ button{
   }
 
   .text-4, .text-5, .text-6{
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 13px;
+    line-height: 20px;
     padding-top: 1%;
     padding-bottom: 1%;
   }
