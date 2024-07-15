@@ -1109,7 +1109,7 @@ export default {
       // Shuffle the messages array before starting the interval
       this.shuffleArray(this.messages);
 
-      const intervalDuration = 40000; // Interval duration in milliseconds
+      const intervalDuration = 60000; // Interval duration in milliseconds
 
       const intervalId = setInterval(() => {
         // Check if all messages have been shown

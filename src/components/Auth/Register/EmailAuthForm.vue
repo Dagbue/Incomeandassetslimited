@@ -81,6 +81,7 @@
 <script>
 
 import BaseButton from "@/components/BaseComponents/buttons/BaseButton.vue";
+import StoreUtils from "@/utility/StoreUtils";
 // import StoreUtils from "@/utility/StoreUtils";
 // import {mapState} from "vuex";
 
@@ -245,11 +246,11 @@ export default {
       this.$router.push("/login")
     },
 
-    // resendOtp(){
-    //   StoreUtils.dispatch(StoreUtils.actions.auth.resendOtp, {
-    //     email: this.signUpFormData.email,
-    //   })
-    // },
+    resendOtp(){
+      StoreUtils.dispatch(StoreUtils.actions.auth.resendOtp, {
+        email: this.signUpFormData.email,
+      })
+    },
 
     handleKeyUp(event) {
       const target = event.target;

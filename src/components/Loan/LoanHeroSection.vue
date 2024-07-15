@@ -24,7 +24,7 @@
 
       <div class="section-2">
 
-        <img src="https://nexo.com/media/pages/borrow/137f2c7242-1685093545/promo-atf-visual.png" alt="image" class="image" />
+        <img src="@/assets/slider-borrow.webp" alt="image" class="image" />
 
       </div>
 
@@ -75,7 +75,7 @@ export default {
 }
 
 .image{
-  width: 75%;
+  width: 80%;
   display: block;
   margin-right: auto;
   margin-left: auto;
