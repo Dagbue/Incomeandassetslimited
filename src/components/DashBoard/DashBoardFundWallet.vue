@@ -363,6 +363,7 @@ input{
   transition: 0.3s;
   outline: none;
   color: #ffffff;
+  font-size: 16px;
 }
 
 input:focus {
@@ -371,6 +372,7 @@ input:focus {
 
 input::placeholder{
   color: #ffffff;
+  font-size: 16px;
 }
 
 select{
@@ -384,11 +386,13 @@ select{
   height: 45px;
   transition: 0.3s;
   outline: none;
+  font-size: 16px;
   color: #ffffff;
 }
 
 select:focus {
   border: 1px solid #3C4A57FF;
+  font-size: 16px;
 }
 
 option{
@@ -401,6 +405,7 @@ option{
   transition: 0.3s;
   outline: none;
   color: #667085;
+  font-size: 16px;
 }
 
 .dashboard-body-wrapper.align-center {

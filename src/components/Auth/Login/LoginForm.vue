@@ -361,6 +361,7 @@ input {
   box-sizing: border-box;
   border: 1px solid #D0D5DD;
   border-radius: 8px;
+  font-size: 16px;
   -webkit-transition: 0.3s;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -374,10 +375,12 @@ input:focus {
 }
 input::placeholder {
   color: var(--black-color);
+  font-size: 16px;
 }
 .input-form-1.password {
   border-right-style: none;
   border-radius: 8px 0 0 8px;
+  font-size: 16px;
 }
 
 

@@ -136,6 +136,7 @@ export default {
   max-width: 500px;
   height: 35px;
   color: white;
+  font-size: 16px;
   padding: 5px 20px;
 }
 

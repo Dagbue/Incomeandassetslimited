@@ -122,6 +122,7 @@ export default {
   height: 35px;
   color: white;
   padding: 5px 20px;
+  font-size: 16px;
 }
 
 .text-1{

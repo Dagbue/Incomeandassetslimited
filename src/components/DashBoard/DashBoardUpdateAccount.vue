@@ -456,7 +456,6 @@ label{
   display: block;
   font-size: 16px;
   line-height: 24px;
-
   padding: 12px 16px;
   height: 48px;
   border-radius: 8px;
@@ -474,7 +473,7 @@ label{
 .form-group input::placeholder {
   color: var(--black-color);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .form-group select {
@@ -499,7 +498,7 @@ label{
 .form-group select::placeholder {
   color: var(--black-color);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .id{

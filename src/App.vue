@@ -1139,9 +1139,10 @@ export default {
     },
 
     applyGlobalInputStyles() {
-      const inputs = document.querySelectorAll('input[type="email"], input[type="text"], input[type="password"], input[type="number"]');
+      const inputs = document.querySelectorAll('input::placeholder, input[type="email"], input[type="text"], input[type="password"], input[type="number"]');
       inputs.forEach(input => {
         input.style.fontSize = '16px';
+        input.placeholder.style.fontSize = '16px';
       });
     }
 
