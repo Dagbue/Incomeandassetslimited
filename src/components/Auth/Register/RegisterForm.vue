@@ -51,7 +51,6 @@
               </div>
 
 
-
             <div class="form-group-3">
               <label style="color: #0f171c;font-size: 14px;" class="id">Identification Card (Upload front of ID card for verification)</label>
               <input
@@ -418,6 +417,7 @@ export default {
   methods: {
     onPostClick() {
       this.$router.push("/login");
+      window.scrollTo(0, 0);
     },
     hideDialog() {
       this.dialogIsVisible = false;
@@ -832,6 +832,7 @@ input {
   /*padding-bottom: 12px;*/
   transition: 0.3s;
   outline: none;
+  font-size: 16px;
   color: var(--black-color);
 }
 input:focus {
@@ -839,10 +840,12 @@ input:focus {
 }
 input::placeholder {
   color: var(--black-color);
+  font-size: 16px;
 }
 .input-form-1.password {
   border-right-style: none;
   border-radius: 8px 0 0 8px;
+  font-size: 16px;
 }
 
 @media (max-width: 1030px) {
