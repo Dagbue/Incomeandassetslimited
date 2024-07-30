@@ -1871,7 +1871,7 @@ td {
 .fa-search{
   color: #FFFFFF;
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
 
   .fund-wallet{
     display: none;

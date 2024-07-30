@@ -161,7 +161,7 @@ export default {
 }
 
 
-@media (max-width: 990px) {
+@media (max-width: 1150px) {
   .home-content{
     position: fixed;
     left: unset;
