@@ -1179,8 +1179,8 @@ export default {
   },
 
   mounted() {
-    this.showToast();
-    this.applyGlobalInputStyles();
+    // this.showToast();
+    // this.applyGlobalInputStyles();
   }
 }
 
