@@ -46,14 +46,18 @@
             <td data-label="ID Front">
               <!-- Uncomment and replace with actual Vue.js bindings -->
 <!--               <img style="width: 15%" :src="child.frontId" alt="Selected Image" />-->
-              <a :href="child.frontId" target="_blank">{{child.frontId}}</a>
+<!--              <a :href="child.frontId" target="_blank">{{child.frontId}}</a>-->
+              <a :href="child.frontId" target="_blank" @click.prevent="openImageInNewTab(child.frontId)">
+                {{ child.frontId }}
+              </a>
             </td>
             <td data-label="ID Back">
               <!-- Uncomment and replace with actual Vue.js bindings -->
 <!--               <img style="width: 15%" :src="child.backId" alt="Selected Image" />-->
-              <a href="#" @click.prevent="openImageInNewTab(child.backId)">
+              <a :href="child.backId" target="_blank" @click="openImageInNewTab(child.backId)">
                 {{ child.backId }}
               </a>
+<!--              <a :href="child.backId" target="_blank">{{child.backId}}</a>-->
 
             </td>
           </tr>
@@ -124,10 +128,11 @@ export default {
   },
   methods: {
     openImageInNewTab(url) {
+      // Open the image in a new tab and display it
       const win = window.open();
-      win.document.write(`<img src="${url}" alt="Image"/>`);
-      // Consider adding document.close() to signal that you've finished writing to the document
-      win.document.close();
+      win.document.write(`<img src="${url}" alt="Image" style="width:400px;height:300px;text-align:center;margin:auto;"/>`);
+      win.document.title = "Image Preview"; // Optionally, set the title of the new tab
+      win.document.close(); // Ensure the document is closed to signal the browser that the content is ready
     },
     previousPage() {
       if (this.currentPage > 1) {
