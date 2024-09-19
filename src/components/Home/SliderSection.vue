@@ -12,9 +12,9 @@
             <p>Exclusive Opportunity for Income And Assets Limited Day Traders.</p>
             <h2 @click="onPostClick">Get Started</h2>
             <p>
-              Opening a new IAL account provides a 0.25% discount on margin rates for the first $100,000 of a margin
-              loan, benefiting Individual and Joint Accounts. Follow the outlined steps to set up your account and
-              enjoy this offer.
+
+              Opening a new IAL account gives a 0.25% discount on margin rates for the first $100,000.
+              This offer applies to Individual and Joint Accounts.
             </p>
 <!--            <div class="button-part">-->
 <!--              <button class="btn1" @click="onPostClick">Open Live Account</button>-->
@@ -40,11 +40,11 @@
         <div class="item">
           <img src="@/assets/background3.jpg" alt="" class="" />
           <div class="content">
-            <p>Invest with confidence by monitoring and adopting the strategies of leading financial experts.</p>
+            <p>Invest confidently by tracking and applying the strategies of top financial experts.</p>
             <h2 @click="onPostClick">Invest Now</h2>
             <p>
-              Join our social trading platform and connect with a vibrant community of investors from around the world.
-              Here, you can share and discover investment insights and strategies, enhancing your trading experience.
+              Join our social trading platform to connect with a global community of investors, where you can share
+              and discover investment insights and strategies to improve your trading experience.
             </p>
 <!--            <div class="button-part">-->
 <!--              <button class="btn1" @click="onPostClick">Open Live Account</button>-->
@@ -220,9 +220,10 @@ export default {
 }
 
 .slider .list .item .content p{
-  font-size: 17px;
-  letter-spacing: 1.45px;
-  line-height: 1.3;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  line-height: 1.2;
+  width: 85%;
 }
 
 .slider .list .item .content h2{
