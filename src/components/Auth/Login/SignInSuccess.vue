@@ -52,7 +52,6 @@ export default {
   },
   computed:{
     ...mapState({
-      // loading: state => state.auth.loading,
       auth: state => state.auth,
     }),
     userDetails() {
@@ -81,8 +80,10 @@ export default {
       localStorage.userId = this.userDetails.user.userId
       localStorage.userFirstName = this.userDetails.user.firstName
       localStorage.userLastName = this.userDetails.user.lastName
+      localStorage.bitcoinRate = this.bitcoinRate
       localStorage.setItem('userInfo', JSON.stringify(this.userDetails.user));
       localStorage.setItem('userTrade', JSON.stringify(this.userTrade.trades));
+      // console.log(localStorage)
     },
 
 
@@ -103,14 +104,6 @@ export default {
           });
     },
 
-    //
-    // fetchBitcoinRate() {
-    //   axios.get('https://api.coindesk.com/v1/bpi/currentprice/BTC.json')
-    //       .then(response => {
-    //         this.bitcoinRate = response.data.bpi.USD.rate_float;
-    //       })
-    //       .catch(error => console.error(error));
-    // },
   },
   created() {
     this.fetchBitcoinRate()

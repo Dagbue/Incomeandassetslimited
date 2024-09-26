@@ -64,24 +64,6 @@ export default {
 }
 
 
-.account-links2{
-  text-decoration: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  background-color: #0f171c;
-  padding: 10px 30px;
-  margin-right: 1%;
-  color: #FFFFFF;
-  border-radius: 5px;
-  font-size: 14px;
-}
-.account-links2:hover{
-  background-color: #af910d;
-  border:1px solid #af910d;
-  color: #fff;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
 
 
 
